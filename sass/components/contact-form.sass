@@ -4,6 +4,7 @@
   margin-bottom: 0
   padding-bottom: 0.5em
   border-bottom: 1px solid $gray-light
+
   input, textarea
     z-index: 1
     position: relative
@@ -15,6 +16,7 @@
     background: none
     box-shadow: none !important
     resize: none
+
   label
     display: block
     z-index: 0
@@ -30,7 +32,8 @@
     -moz-transition: top 0.3s ease,opacity 0.3s ease
     -ms-transition: top 0.3s ease,opacity 0.3s ease
     transition: top 0.3s ease,opacity 0.3s ease
-  &::not(:first-child)
+
+  &:not(:first-child)
     padding-left: 14px
     border-left: 1px solid $gray-light
 
