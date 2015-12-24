@@ -1,36 +1,67 @@
 ---
 layout: page
-description: "A Clean Blog Theme by Start Bootstrap"
+description: "Music for film, game, and multimedia"
 ---
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-    </a>
-    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
-</div>
-<hr>
-{% endfor %}
+<div class="home">
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+  <div class="testimonial">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <!-- awards: img -->
+      <p>awards: img</p>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <!-- testimonial: text -->
+      <p>testmonial: text</p>
+    </div>
+  </div>
+
+  <div class="sample-works">
+    <div class="label">
+      <!-- text -->
+      <p>sample-works label</p>
+    </div>
+    <div class="player">
+      <!-- player -->
+      <p>player</p>
+    </div>
+  </div>
+
+  <div class="infomation">
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <!-- About Me -->
+      <p>About Me</p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <!-- Credits -->
+      <p>Credits</p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <!-- Services -->
+      <p>Services</p>
+    </div>
+  </div>
+
+  <div class="free-download">
+    <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+      <!-- Label -->
+      <p>Label</p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+      <!-- Button : Navigate to Download -->
+      <p>Button : Navigate to Download</p>
+    </div>
+  </div>
+
+  <div class="recentpost">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <!-- images, videos -->
+      <p>images, videos</p>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <!-- recent posts: two recent post with button to blog view -->
+      <p>recent posts: two recent post with button to blog view</p>
+    </div>
+  </div>
+
+</div>
