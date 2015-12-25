@@ -1,24 +1,39 @@
-// common: variables, extend, mixins
+// utils
+@import "utils/mixins"
+@import "utils/extends"
 @import "common/variables"
-@import "common/mixins"
 
-// base: html overrides, html elements
-@import "base/style"
-@import "base/button"
 
-// components: paginations, form, navigation
-@import "components/pagination/navigator"
-@import "components/contact-form"
-@import "components/navigation"
+// common
+@import "common/base"
 
-// components module: post item, header, footer
-@import "module/post/item"
-@import "module/post/section-caption"
-@import "module/header"
-@import "module/footer"
 
-// typography: font family, text styling
+// typography
 @import "typography/font"
 @import "typography/style"
 
 
+// components: paginations, form, navigation
+@import "components/pagination/navigator"
+@import "components/post/item"
+@import "components/post/section-caption"
+@import "components/buttons"
+@import "components/header"
+@import "components/footer"
+@import "components/navigation"
+
+
+// pages
+@import "pages/about/style"
+@import "pages/blog/style"
+@import "pages/contact/style"
+@import "pages/credits/style"
+@import "pages/freemusic/style"
+@import "pages/home/style"
+@import "pages/services/style"
+
+
+// layouts
+@import "layouts/responsive/breakpoints"
+@import "layouts/responsive/mediaqueries"
+@import "layouts/responsive/style"
