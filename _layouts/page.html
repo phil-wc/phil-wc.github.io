@@ -6,11 +6,12 @@ layout: default
 <header class="{%if page.title =='Home' %}home-header{%else%}intro-header{%endif%}" style="background-image: url('{{ site.baseurl }}/assets/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
         <div class="site-heading">
-          <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-          <hr class="small">
-          <span class="subheading">{{ page.description }}</span>
+          <h1>{% if page.title == "Home" %}Chapavich Temnitikul{% else if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+          <br/>
+          <br/>
+          <p class="subheading">{{ page.description }}</p>
         </div>
       </div>
     </div>
