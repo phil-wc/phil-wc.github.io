@@ -1,6 +1,4 @@
 .intro-header
-  // NOTE: Background images are set within the HTML using inline CSS!
-  // +background-cover
   @extend %background-cover
 
   background: no-repeat center center
@@ -9,18 +7,17 @@
   margin-bottom: 50px
 
   .site-heading, .post-heading, .page-heading
-    padding: 100px 0 50px
+    padding: 180px 0 200px
     color: white
 
     @media only screen and (min-width: 768px)
-      padding: 150px 0
+      padding: 180px 0 200px
 
   .site-heading, .page-heading
     text-align: center
 
     h1
       margin-top: 0
-      // font-size: 50px
       font-size: $header-name-font-size
 
     .subheading
@@ -70,4 +67,4 @@
 
 .home-header
   @extend .intro-header
-  min-height: 650px
+  min-height: $header-home-fixed-height
