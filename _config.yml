@@ -19,6 +19,7 @@ exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 # lazy declaration shit, so don't needed to define front matter every page
 author:
   name: "Chapavich Temnitikul"
+  artist_name: "phil_wc"
 
 defaults:
   -
