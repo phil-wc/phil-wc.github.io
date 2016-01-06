@@ -1,7 +1,14 @@
 .pager
   margin: 20px 0 0
+
   li
     > a,
+    > a:hover,
+    > a:focus
+      color: white
+      background-color: $site-brand-color
+      border: 1px solid $site-brand-color
+
     > span
       @extend %secondary-font-family
       text-transform: uppercase
@@ -11,14 +18,12 @@
       padding: 10px 5px
       background-color: white
       border-radius: 0
+
       @media only screen and (min-width: 768px)
         font-size: 14px
         padding: 15px 25px
-    > a:hover,
-    > a:focus
-      color: white
-      background-color: $site-brand-color
-      border: 1px solid $site-brand-color
+
+
   .disabled
     > a,
     > a:hover,

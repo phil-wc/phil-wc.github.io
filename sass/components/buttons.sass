@@ -2,16 +2,16 @@
 
 .btn
   @extend %secondary-font-family
+  padding: $button-padding-top-bottom $button-padding-right-left
+  font-size: $button-font-size
+  font-weight: $button-font-weight
+  letter-spacing: $button-letter-spacing
   text-transform: uppercase
-  font-size: 14px
-  font-weight: 800
-  letter-spacing: 1px
   border-radius: 0
-  padding: 15px 25px
 
 .btn-lg
-  font-size: 16px
-  padding: 25px 35px
+  font-size: $button-lg-font-size
+  padding: $button-lg-padding-top-bottom $button-lg-padding-right-left
 
 .btn-default
   &:hover, &:focus
