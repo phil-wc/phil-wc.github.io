@@ -14,9 +14,14 @@ markdown: kramdown
 highlighter: pygments
 permalink: pretty
 paginate: 5
+gems: ["jekyll-paginate"]
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
+
 # lazy declaration shit, so don't needed to define front matter every page
+author:
+  name: "CHAPAVICH TEMNITIKUL"
+  artist_name: "phil_wc"
 
 defaults:
   -
