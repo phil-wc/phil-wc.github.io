@@ -1,67 +1,51 @@
 .intro-header
-  // NOTE: Background images are set within the HTML using inline CSS!
-  +background-cover
+  @extend %background-cover
 
   background: no-repeat center center
   background-color: $gray
   background-attachment: scroll
-  margin-bottom: 50px
 
   .site-heading, .post-heading, .page-heading
-    padding: 100px 0 50px
-    color: white
-
-    @media only screen and (min-width: 768px)
-      padding: 150px 0
-
-  .site-heading, .page-heading
+    padding-top: $header-padding-top
+    padding-right: 0
+    padding-bottom: $header-padding-bottom
+    color: $header-text-color
     text-align: center
 
     h1
+      font-size: $header-name-font-size
       margin-top: 0
-      font-size: 50px
 
     .subheading
-      +sans-serif
-
-      font-size: 24px
-      line-height: 1.1
-      display: block
-      font-weight: 300
-      margin: 10px 0 0
+      @extend %primary-font-family
+      color: $header-text-color
+      font-size: $subheading-font-size
+      font-weight: $subheading-font-weight
+      line-height: $subheading-line-height
+      margin: $subheading-margin-top 0 0
 
     @media only screen and (min-width: 768px)
       h1
-        font-size: 80px
+        font-size: $heading-font-size
 
   .post-heading
-    h1
-      font-size: 35px
-
-    .subheading, .meta
-      line-height: 1.1
-      display: block
-
     .subheading
-      +sans-serif
-
-      font-size: 24px
-      margin: 10px 0 30px
-      font-weight: 600
+      font-weight: $post-subheading-font-weight
+      margin: $subheading-margin-top 0 $post-subheading-margin-bottom
 
     .meta
-      +serif
-
+      @extend %serif-font-family
+      font-size: $post-meta-font-size
+      font-weight: $subheading-font-weight
+      line-height: $post-meta-line-height
       font-style: italic
-      font-weight: 300
-      font-size: 20px
 
       a
-        color: white
-
-    @media only screen and (min-width: 768px)
-      h1
-        font-size: 55px
+        color: $header-text-color
 
       .subheading
-        font-size: 30px
+        font-size: $post-meta-subheading-font-size
+
+.home-header
+  @extend .intro-header
+  min-height: $header-home-min-height
