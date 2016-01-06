@@ -1,5 +1,5 @@
 .intro-header
-  @extend %background-cover
+  +background-size
 
   background: no-repeat center center
   background-color: $gray
@@ -48,4 +48,6 @@
 
 .home-header
   @extend .intro-header
+  +background-size
+  background-image: url('/assets/img/home/header-bg.jpg')
   min-height: $header-home-min-height
