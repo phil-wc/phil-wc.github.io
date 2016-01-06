@@ -1,10 +1,12 @@
 .post-item
+  background-color: $blog-post-item-background-color
+
   > a
-    color: $gray-dark
+    color: $blog-post-item-title-text-color
 
     &:hover, &:focus
       text-decoration: none
-      color: $site-brand-color
+      color: $blog-post-item-title-text-color-on-hover
 
     > .post-title
       font-size: 30px
@@ -27,7 +29,7 @@
       color: $gray-dark
 
       &:hover, &:focus
-        color: $site-brand-color
+        color: $blog-post-item-subtitle-text-color-on-hover
         text-decoration: underline
 
   @media only screen and (min-width: 768px)
