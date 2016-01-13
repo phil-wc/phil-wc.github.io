@@ -1,0 +1,29 @@
+@import "variables"
+
+.home
+  .testimonial, .testimonial-text, .music
+    background-color: $site-primary-color
+
+  .testimonial, .sample, .infomation, .music, .recentpost
+    width: 100%
+
+  .testimonial
+    min-height: 400px
+
+    .filmfest
+      @extend %reset-padding
+      display: inline-block
+      width: 50%
+
+      img
+        @extend %full-width
+
+    .slider
+      display: inline-block
+      width: 50%
+      // margin-top: 25%
+      //check the media screen
+
+  .music
+    padding-top: 15px
+    color: #ffffff
