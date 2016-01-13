@@ -12,7 +12,6 @@ facebook_username:  IronSummitMedia
 # Build settings
 markdown: kramdown
 highlighter: pygments
-permalink: pretty
 paginate: 5
 gems: ["jekyll-paginate"]
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
@@ -22,6 +21,9 @@ exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 author:
   name: "CHAPAVICH TEMNITIKUL"
   artist_name: "phil_wc"
+
+sass:
+  sass_dir: _sass
 
 defaults:
   -
