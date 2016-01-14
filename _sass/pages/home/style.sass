@@ -1,15 +1,14 @@
 @import "variables"
 
 .home
-  .testimonial, .testimonial-text, .music,
+  .testimonial, .testimonial-text, .music
     background-color: $site-primary-color
 
   .testimonial, .sample, .profile, .music, .recentpost
     width: 100%
 
   img
-    // overrides image tag that reside in the home container
-    @extend %full-width
+    @extend %full-width // overrides image tag that reside in the home container
 
   .testimonial
     .filmfest
