@@ -1,7 +1,7 @@
 @import "variables"
 
 .home
-  .testimonial, .testimonial-text, .music
+  .testimonial, .testimonial-text, .music,
     background-color: $site-primary-color
 
   .testimonial, .sample, .infomation, .music, .recentpost
@@ -18,7 +18,23 @@
       color: #ffffff
 
       .slider
+        color: #ffffff
 
   .music
-    padding-top: 15px
+    padding: 60px 0
     color: #ffffff
+
+    // TODO: REFACTOR THIS SHIT
+    h4, .description
+      padding: 1em
+      text-align: center
+
+      .button-solid
+        border: 3px solid #fff
+        padding: 0.5em 1em
+        color: white
+
+    .description
+      text-align: left
+
+  .infomation
