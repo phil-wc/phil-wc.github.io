@@ -4,14 +4,16 @@
   .testimonial, .testimonial-text, .music,
     background-color: $site-primary-color
 
-  .testimonial, .sample, .infomation, .music, .recentpost
+  .testimonial, .sample, .profile, .music, .recentpost
     width: 100%
+
+  img
+    // overrides image tag that reside in the home container
+    @extend %full-width
 
   .testimonial
     .filmfest
       @extend %reset-bootstrap-shit
-      img
-        @extend %full-width
 
     .testimonial-text
       @extend %reset-bootstrap-shit
@@ -32,9 +34,21 @@
       .button-solid
         border: 3px solid #fff
         padding: 0.5em 1em
-        color: white
+        color: #fff
+        text-decoration: none
 
     .description
       text-align: left
 
-  .infomation
+  .profile
+    // TODO: REFACTOR THIS SHIT
+    .content
+      @extend %reset-padding
+
+      .button-center-container
+        @extend %center-element
+        .button-solid
+          border: 3px solid #fff
+          padding: 0.5em 1em
+          color: #fff
+          text-decoration: none
