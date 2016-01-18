@@ -7,12 +7,18 @@ body, h1, h2, h3, h4, h5, h6, .intro-header .site-heading .subheading, .home-hea
 .intro-header .post-heading .meta, .home-header .post-heading .meta {
   font-family: "Lora", "Times New Roman", serif; }
 
-.home .testimonial .filmfest img {
-  width: 100% !important;
-  height: auto; }
-
-.home .testimonial .filmfest {
+.home .profile .content {
   padding: 0 !important; }
+
+.home .testimonial .testimonial-text {
+  padding: 0 !important;
+  margin: 0 !important; }
+
+.home .profile .content .button-center-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 body {
   font-size: 14px; }
@@ -46,6 +52,9 @@ img::-moz-selection {
 
 body {
   webkit-tap-highlight-color: #0085A1; }
+
+.container-fluid {
+  /* override shit */ }
 
 blockquote {
   font-style: italic; }
@@ -326,18 +335,35 @@ footer {
 
 .home .testimonial, .home .testimonial-text, .home .music {
   background-color: #3384a0; }
-.home .testimonial, .home .sample, .home .infomation, .home .music, .home .recentpost {
+.home .testimonial, .home .sample, .home .profile, .home .music, .home .recentpost {
   width: 100%; }
-.home .testimonial {
-  min-height: 400px; }
-  .home .testimonial .filmfest {
-    display: inline-block;
-    width: 50%; }
-  .home .testimonial .slider {
-    display: inline-block;
-    width: 50%; }
-.home .music {
-  padding-top: 15px;
+.home .testimonial .testimonial-text .unslider {
+  padding: 30px;
   color: #ffffff; }
-
-/*# sourceMappingURL=main.css.map */
+  .home .testimonial .testimonial-text .unslider h3, .home .testimonial .testimonial-text .unslider h4 {
+    font-weight: lighter; }
+.home .sample {
+  background: no-repeat center center;
+  background-size: cover;
+  background-image: url("/assets/img/home/sample-works-bg.jpg"); }
+  .home .sample .player-container .cover-img img {
+    max-width: 100%;
+    width: initial; }
+.home .music {
+  padding: 60px 0;
+  color: #ffffff; }
+  .home .music h4, .home .music .description {
+    padding: 1em;
+    text-align: center; }
+    .home .music h4 .button-solid, .home .music .description .button-solid {
+      border: 3px solid #fff;
+      padding: 0.5em 1em;
+      color: #fff;
+      text-decoration: none; }
+  .home .music .description {
+    text-align: left; }
+.home .profile .content .button-center-container .button-solid {
+  border: 3px solid #fff;
+  padding: 0.5em 1em;
+  color: #fff;
+  text-decoration: none; }
