@@ -7,24 +7,29 @@
   .testimonial, .sample, .profile, .music, .recentpost
     width: 100%
 
-  img
-    @extend %full-width // overrides image tag that reside in the home container
-
   .testimonial
-    .filmfest
-      @extend %reset-bootstrap-shit
 
     .testimonial-text
       @extend %reset-bootstrap-shit
-      color: #ffffff
 
-      .slider
+      .unslider
+        padding: 30px
         color: #ffffff
+
+        h3,h4
+          // refactor this shit
+          font-weight: lighter
 
   .sample
     background: no-repeat center center
     background-size: cover
     background-image: url('/assets/img/home/sample-works-bg.jpg')
+
+    .player-container
+      .cover-img
+        img
+          max-width: 100%
+          width: initial
 
   .music
     padding: 60px 0
