@@ -60,6 +60,26 @@
 <script>
   $(document).ready(function() {
     $('.testimonial-text #js-slider').unslider();
+
+(function() {
+  var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.async = true;
+      script.src = '//sd.toneden.io/production/toneden.loader.js';
+
+  var entry = document.getElementsByTagName('script')[0];
+      entry.parentNode.insertBefore(script, entry);
+})();
+
+  ToneDenReady = window.ToneDenReady || [];
+  ToneDenReady.push(function() {
+    ToneDen.player.create({
+      dom: ".player-container",
+      skin: "light",
+      visualizerType:"waves",
+      urls: ['https://soundcloud.com/phil_wc/sets/reverbtheme']});
+  })
+;
   });
 
 </script>
