@@ -4,60 +4,54 @@
   .testimonial, .testimonial-text, .music
     background-color: $site-primary-color
 
-  .testimonial, .sample, .profile, .music, .recentpost
+  .testimonial, .sample, .music, .recentpost
     width: 100%
-
-  .testimonial
-
-    .testimonial-text
-      @extend %reset-bootstrap-shit
-
-      .unslider
-        padding: 30px
-        color: #ffffff
-
-        h3,h4
-          // refactor this shit
-          font-weight: lighter
-
-  .sample
-    background: no-repeat center center
-    background-size: cover
-    background-image: url('/assets/img/home/sample-works-bg.jpg')
-
-    .player-container
-      .cover-img
-        img
-          max-width: 100%
-          width: initial
-
-  .music
-    padding: 60px 0
-    color: #ffffff
-
-    // TODO: REFACTOR THIS SHIT
-    h4, .description
-      padding: 1em
-      text-align: center
-
-      .button-solid
-        border: 3px solid #fff
-        padding: 0.5em 1em
-        color: #fff
-        text-decoration: none
-
-    .description
-      text-align: left
+    padding-top: $default-padding
+    padding-bottom: $default-padding
 
   .profile
-    // TODO: REFACTOR THIS SHIT
+    @extend %reset-padding
+
     .content
       @extend %reset-padding
 
       .button-center-container
         @extend %center-element
-        .button-solid
-          border: 3px solid #fff
-          padding: 0.5em 1em
-          color: #fff
-          text-decoration: none
+
+  .sample
+    background: no-repeat center center
+    background-size: cover
+    background-image: url('/assets/img/home/sample-works-bg.jpg')
+    min-height: $sample-min-height-size
+
+    .description, .player-container
+      height: 100%
+      width: 50%
+
+    .description
+      @extend %center-element
+
+
+  .music
+    padding: ($default-padding * 2) 0
+    color: #fff
+
+    // TODO: REFACTOR THIS SHIT
+    h4, .description
+      padding: $default-padding-em
+      text-align: center
+
+    .description
+      text-align: left
+
+
+  .testimonial
+    .testimonial-text
+      @extend %reset-margin-padding
+
+      .unslider
+        padding: $default-padding
+        color: #fff
+
+        h3,h4
+          @extend %lighten-font-weight
