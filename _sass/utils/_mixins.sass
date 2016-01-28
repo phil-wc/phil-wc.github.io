@@ -1,8 +1,8 @@
 // Mixins
-=transition($property: all, $delay: 0.5s)
-  -webkit-transition: $property $delay
-  -moz-transition: $property $delay
-  transition: $property $delay
+=transition($property: all, $delay: 0.5s, $timing_function: "ease-in-out" )
+  -webkit-transition: $property $delay $timing_function
+  -moz-transition: $property $delay $timing_function
+  transition: $property $delay $timing_function
 
 =transform($property)
   -webkit-transform: $property
