@@ -19,9 +19,21 @@
 
     .content
       @extend %reset-padding
+      overflow: hidden
 
       .button-center-container
         @extend %center-element
+
+    .profile-menu-image
+      +transition(all, .2s, ease-in-out)
+      opacity: 1
+
+      &:hover
+        cursor: pointer
+        +transform(scale(1.1))
+        background: #ffffff
+        opacity: .75
+
 
   .sample
     min-height: $sample-min-height-size
