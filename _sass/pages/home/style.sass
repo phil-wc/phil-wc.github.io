@@ -1,0 +1,79 @@
+@import "variables"
+
+.home
+  .testimonial, .testimonial-text, .music
+    background-color: $site-primary-color
+
+  .testimonial, .sample, .music, .recentpost, .posts
+    width: 100%
+    padding-top: $default-padding
+    padding-bottom: $default-padding
+
+  .sample, .posts
+    background: no-repeat center center
+    background-size: cover
+
+  .profile
+    @extend %reset-padding
+
+    .content
+      @extend %reset-padding
+      overflow: hidden
+
+      .button-center-container
+        @extend %center-element
+
+    .profile-menu-image
+      +transition(all, .2s, ease-in-out)
+      opacity: 1
+
+      &:hover
+        cursor: pointer
+        +transform(scale(1.1))
+        background: #ffffff
+        opacity: .75
+
+
+  .sample
+    background-image: url('/assets/img/home/sample-works-bg.jpg')
+
+    .description
+      padding: 0 $default-padding
+
+    .description
+      .content
+        width: 60%
+
+    #js-player-container-default, #js-player-container-mobile
+      @extend %margin-left-right-default
+
+
+  .music
+    padding: ($default-padding * 2) 0
+    color: #fff
+
+    h4, .description
+      padding: $default-padding-em
+
+
+  .testimonial
+    .testimonial-text
+      @extend %reset-margin-padding
+
+      .unslider
+        padding: $default-padding
+        color: #fff
+
+        h3,h4
+          @extend %lighten-font-weight
+
+  .posts
+    background-image: url('/assets/img/home/blog-section.jpg')
+
+    .section-title
+      margin-bottom: $default-margin
+      color: invert($site-text-color)
+
+    .older-post
+      margin-top: $default-margin
+      margin-bottom: $default-margin

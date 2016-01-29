@@ -1,0 +1,56 @@
+.intro-header
+  +background-size
+
+  background: no-repeat center center
+  background-color: $gray
+  background-attachment: scroll
+
+  .site-heading, .post-heading, .page-heading
+    padding-top: $header-padding-top
+    padding-right: 0
+    padding-bottom: $header-padding-bottom
+    color: $header-text-color
+    text-align: center
+
+    img
+      width: 11%
+      height: auto
+    h1
+      font-size: $header-name-font-size
+      margin-top: 0
+
+    .subheading
+      @extend %primary-font-family
+      color: $header-text-color
+      font-size: $subheading-font-size
+      font-weight: $subheading-font-weight
+      line-height: $subheading-line-height
+      margin: $subheading-margin-top 0 0
+
+    @media only screen and (min-width: 768px)
+      h1
+        font-size: $heading-font-size
+
+  .post-heading
+    .subheading
+      font-weight: $post-subheading-font-weight
+      margin: $subheading-margin-top 0 $post-subheading-margin-bottom
+
+    .meta
+      @extend %serif-font-family
+      font-size: $post-meta-font-size
+      font-weight: $subheading-font-weight
+      line-height: $post-meta-line-height
+      font-style: italic
+
+      a
+        color: $header-text-color
+
+      .subheading
+        font-size: $post-meta-subheading-font-size
+
+.home-header
+  @extend .intro-header
+  +background-size
+  background-image: url('/assets/img/home/header-bg.jpg')
+  min-height: $header-home-min-height

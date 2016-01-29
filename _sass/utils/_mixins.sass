@@ -1,0 +1,18 @@
+// Mixins
+=transition($property: all, $delay: 0.5s, $timing_function: "ease-in-out" )
+  -webkit-transition: $property $delay $timing_function
+  -moz-transition: $property $delay $timing_function
+  transition: $property $delay $timing_function
+
+=transform($property)
+  -webkit-transform: $property
+  -moz-transform: $property
+  -ms-transform: $property
+  -o-transform: $property
+  transform: $property
+
+=background-size($size: cover)
+  -webkit-background-size: $size
+  -moz-background-size: $size
+  -o-background-size: $size
+  background-size: $size

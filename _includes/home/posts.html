@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="section-title text-center">
+    <h1>BLOG POSTS</h1>
+  </div>
+
+  {% for post in paginator.posts limit:3 %}
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+        <div class="post-item">
+          <h6><a class="post-title" href="{{ post.url }}">{{ post.title }}</a></h6>
+          <p class="post-meta">
+            <span class="date">on {{ post.date | date: "%B %-d, %Y" }}</span>
+            <span class="author"> • {% if post.author %}{{ post.author }}{% else %}{{ site.author.name }}{% endif %}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+
+<!-- more posts -->
+  <!-- <div class="button-center-container text-center">
+    <h3><a class="button-solid" href="{{ site.baseurl }}/blog">OLDER POSTS</a></h3>
+  </div> -->
+  <div class="older-post text-center">
+    <a class="button-solid" href="{{ site.baseurl }}/blog">OLDER POSTS</a>
+  </div>
+</div>

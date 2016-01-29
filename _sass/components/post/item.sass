@@ -1,0 +1,47 @@
+.post-item
+  border-bottom: 1px solid #fff
+  padding: ($default-padding/2) 0
+  margin-bottom: 15px
+
+  h1,h2,h3,h4,h5,h6
+    margin-top: 0
+    font-size: ($blog-post-item-title-font-size * 1.2)
+
+  a
+    color: invert($site-text-color)
+
+    &:hover, &:focus
+      text-decoration: none
+      color: $gray
+
+  .post-title
+    font-size: $blog-post-item-title-font-size
+    margin-top: $blog-post-item-title-margin-top
+    margin-bottom: $blog-post-item-title-margin-bottom
+
+  .post-subtitle
+    margin: 0
+    font-weight: $blog-post-item-subtitle-font-weight
+    margin-bottom: $blog-post-item-subtitle-margin-bottom
+
+  .post-meta
+    color: invert($site-text-color)
+    margin-top: $blog-post-item-meta-margin-top
+    margin-bottom: $blog-post-item-meta-margin-bottom
+    font-size: $blog-post-item-meta-font-size
+
+    .date, .author
+      @extend %normal-font-weight
+
+    > a
+      text-decoration: none
+      color: invert($site-text-color)
+
+      &:hover, &:focus
+        color: $blog-post-item-subtitle-text-color-on-hover
+        text-decoration: underline
+
+  @media only screen and (min-width: 768px)
+    > a
+      > .post-title
+        font-size: ($blog-post-item-title-font-size * 1.2)

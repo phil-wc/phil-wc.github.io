@@ -8,6 +8,11 @@ layout: default
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
         <div class="site-heading">
+          {% if page.title == "Home" %}
+            <div class="logo">
+              <img class="center-block" src="/assets/img/logo.png" alt="Logo">
+            </div>
+          {% endif %}
           <h1>{% if page.title == "Home" %}{{ site.author.name }}{% else if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
           <br/>
           <br/>
@@ -20,6 +25,3 @@ layout: default
 
 <!-- Main Content -->
 {{ content }}
-
-<hr>
-

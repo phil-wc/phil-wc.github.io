@@ -1,0 +1,19 @@
+footer
+  @extend %primary-font-family
+  padding: $footer-padding-top 0 $footer-padding-bottom
+  background-color: $footer-primary-color
+
+  .list-inline
+    @extend %reset-margin-padding
+
+  .social
+    a
+      color: $footer-text-color
+
+      &:hover, &:focus
+        color: $footer-text-hover-color
+
+  .copyright
+    color: $footer-text-color
+    text-align: center
+    margin-bottom: 0
