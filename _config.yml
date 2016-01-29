@@ -1,6 +1,7 @@
 # Site settings
 title: CHAPAVICH TEMNITIKUL
 header-img: img/home-bg.jpg
+post-default-header-img: "assets/img/header/news-post-default.jpg"
 email: your-email@yourdomain.com
 description: "Write your site description here. It will be used as your sites meta description as well!"
 baseurl: ""

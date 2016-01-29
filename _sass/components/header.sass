@@ -1,7 +1,6 @@
 .intro-header
-  +background-size
-
   background: no-repeat center center
+  +background-size
   background-color: $gray
   background-attachment: scroll
 
@@ -51,6 +50,9 @@
 
 .home-header
   @extend .intro-header
-  +background-size
   background-image: url('/assets/img/home/header-bg.jpg')
   min-height: $header-home-min-height
+
+.post-header
+  @extend .intro-header
+  background-image: url('/assets/img/header/news-post-default.jpg')
