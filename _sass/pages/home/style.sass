@@ -36,24 +36,15 @@
 
 
   .sample
-    min-height: $sample-min-height-size
-
-    .description, .player-container
-      position: relative
+    .description
       padding: 0 $default-padding
-      height: 100%
-      width: 50%
 
     .description
-      // @extend %center-element
-      float: left
-      height: inherit
-
       .content
         width: 60%
 
-    .player-container
-      float: right
+    #js-player-container-default, #js-player-container-mobile
+      @extend %margin-left-right-default
 
 
   .music
