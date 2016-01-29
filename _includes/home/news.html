@@ -1,6 +1,6 @@
 <div class="container">
   <div class="section-title text-center">
-    <h1>BLOG POSTS</h1>
+    <h1>NEWS</h1>
   </div>
 
   {% for post in paginator.posts limit:3 %}
@@ -17,11 +17,8 @@
     </div>
   {% endfor %}
 
-<!-- more posts -->
-  <!-- <div class="button-center-container text-center">
-    <h3><a class="button-solid" href="{{ site.baseurl }}/blog">OLDER POSTS</a></h3>
-  </div> -->
+  <!-- more posts -->
   <div class="older-post text-center">
-    <a class="button-solid" href="{{ site.baseurl }}/blog">OLDER POSTS</a>
+    <a class="button-solid" href="{{ site.baseurl }}/news">OLDER POSTS</a>
   </div>
 </div>
