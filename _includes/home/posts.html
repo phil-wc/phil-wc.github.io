@@ -4,7 +4,7 @@
   </div>
 
   {% for post in paginator.posts limit:3 %}
-    <div class=" row">
+    <div class="row">
       <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
         <div class="post-item">
           <h6><a class="post-title" href="{{ post.url }}">{{ post.title }}</a></h6>
@@ -18,7 +18,10 @@
   {% endfor %}
 
 <!-- more posts -->
-  <div class="button-center-container text-center">
+  <!-- <div class="button-center-container text-center">
     <h3><a class="button-solid" href="{{ site.baseurl }}/blog">OLDER POSTS</a></h3>
+  </div> -->
+  <div class="section-title text-center">
+    <a class="button-solid" href="{{ site.baseurl }}/blog">OLDER POSTS</a>
   </div>
 </div>
