@@ -12,7 +12,6 @@
   .sample, .posts
     background: no-repeat center center
     background-size: cover
-    background-image: url('/assets/img/home/sample-works-bg.jpg')
 
   .profile
     @extend %reset-padding
@@ -36,6 +35,8 @@
 
 
   .sample
+    background-image: url('/assets/img/home/sample-works-bg.jpg')
+
     .description
       padding: 0 $default-padding
 
@@ -72,6 +73,8 @@
           @extend %lighten-font-weight
 
   .posts
+    background-image: url('/assets/img/home/blog-section.jpg')
+
     .section-title
       margin-bottom: $default-margin
-      color: $site-text-color
+      color: invert($site-text-color)
