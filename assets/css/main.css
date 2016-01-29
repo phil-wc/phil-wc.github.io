@@ -10,6 +10,9 @@ body, h1, h2, h3, h4, h5, h6, .intro-header .site-heading .subheading, .home-hea
 .home .testimonial .testimonial-text .unslider h3, .home .testimonial .testimonial-text .unslider h4 {
   font-weight: lighter; }
 
+.post-item .post-meta .date, .post-item .post-meta .author {
+  font-weight: normal; }
+
 .home .profile, .home .profile .content {
   padding: 0; }
 
@@ -116,19 +119,19 @@ blockquote {
     cursor: not-allowed; }
 
 .post-item {
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 15px 30px;
+  border-bottom: 1px solid #fff;
+  padding: 15px 0;
   margin-bottom: 15px; }
   .post-item h1, .post-item h2, .post-item h3, .post-item h4, .post-item h5, .post-item h6 {
     margin-top: 0;
-    font-size: 31.2px; }
+    font-size: 24px; }
   .post-item a {
-    color: #3384a0; }
+    color: white; }
     .post-item a:hover, .post-item a:focus {
       text-decoration: none;
-      color: #225567; }
+      color: gray; }
   .post-item .post-title {
-    font-size: 26px;
+    font-size: 20px;
     margin-top: 30px;
     margin-bottom: 10px; }
   .post-item .post-subtitle {
@@ -136,19 +139,19 @@ blockquote {
     font-weight: 300;
     margin-bottom: 10px; }
   .post-item .post-meta {
-    color: gray;
+    color: white;
     margin-top: 0;
     margin-bottom: 0;
     font-size: 18px; }
     .post-item .post-meta > a {
       text-decoration: none;
-      color: #404040; }
+      color: white; }
       .post-item .post-meta > a:hover, .post-item .post-meta > a:focus {
         color: #225567;
         text-decoration: underline; }
   @media only screen and (min-width: 768px) {
     .post-item > a > .post-title {
-      font-size: 31.2px; } }
+      font-size: 24px; } }
 
 .section-heading {
   font-size: 14px;
@@ -247,7 +250,9 @@ blockquote {
 
 footer {
   padding: 50px 0 65px;
-  background-color: #5e5e5e; }
+  background-color: #000000; }
+  footer .social a {
+    color: #ffffff; }
   footer .copyright {
     color: #ffffff;
     text-align: center;
@@ -366,8 +371,7 @@ footer {
   padding-bottom: 30px; }
 .home .sample, .home .posts {
   background: no-repeat center center;
-  background-size: cover;
-  background-image: url("/assets/img/home/sample-works-bg.jpg"); }
+  background-size: cover; }
 .home .profile .content {
   overflow: hidden; }
 .home .profile .profile-menu-image {
@@ -384,10 +388,12 @@ footer {
     transform: scale(1.1);
     background: #ffffff;
     opacity: 0.75; }
-.home .sample .description {
-  padding: 0 30px; }
-.home .sample .description .content {
-  width: 60%; }
+.home .sample {
+  background-image: url("/assets/img/home/sample-works-bg.jpg"); }
+  .home .sample .description {
+    padding: 0 30px; }
+  .home .sample .description .content {
+    width: 60%; }
 .home .music {
   padding: 60px 0;
   color: #fff; }
@@ -399,6 +405,8 @@ footer {
 .home .testimonial .testimonial-text .unslider {
   padding: 30px;
   color: #fff; }
-.home .posts .section-title {
-  margin-bottom: 30px;
-  color: #000; }
+.home .posts {
+  background-image: url("/assets/img/home/blog-section.jpg"); }
+  .home .posts .section-title {
+    margin-bottom: 30px;
+    color: white; }
