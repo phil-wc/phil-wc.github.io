@@ -368,11 +368,11 @@ footer {
 
 .home .testimonial, .home .testimonial-text, .home .music {
   background-color: #3384a0; }
-.home .testimonial, .home .sample, .home .music, .home .recentpost, .home .posts {
+.home .testimonial, .home .sample, .home .music, .home .recentpost, .home .news {
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px; }
-.home .sample, .home .posts {
+.home .sample, .home .news {
   background: no-repeat center center;
   background-size: cover; }
 .home .profile .content {
@@ -405,11 +405,11 @@ footer {
 .home .testimonial .testimonial-text .unslider {
   padding: 30px;
   color: #fff; }
-.home .posts {
+.home .news {
   background-image: url("/assets/img/home/blog-section.jpg"); }
-  .home .posts .section-title {
+  .home .news .section-title {
     margin-bottom: 30px;
     color: white; }
-  .home .posts .older-post {
+  .home .news .older-post {
     margin-top: 30px;
     margin-bottom: 30px; }
