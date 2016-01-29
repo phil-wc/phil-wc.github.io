@@ -21,6 +21,7 @@
   $(document).ready(function() {
     $('.testimonial-text #js-slider').unslider({
       autoplay: true,
+      delay: 6000,
       infinite: true
     });
 
@@ -35,18 +36,16 @@
         "dom": "#js-player-container-default",
         "skin": "light",
         "shrink": false,
-        "single": true,
         "visualizerType":"waves",
-        "urls": ['https://soundcloud.com/phil_wc']
+        "urls": ['https://soundcloud.com/phil_wc/sets/reverbtheme']
       });
 
       ToneDen.player.create({
         "dom": "#js-player-container-mobile",
         "skin": "light",
         "shrink": false,
-        "single": true,
         "visualizerType":"waves",
-        "urls": ['https://soundcloud.com/phil_wc']
+        "urls": ['https://soundcloud.com/phil_wc/sets/reverbtheme']
       });
     });
   });
