@@ -186,20 +186,18 @@ blockquote {
   color: white; }
 
 .button-solid {
-  border: 3px solid #fff;
-  padding: 0.5em 1em;
-  color: #fff; }
-  .button-solid:hover, .button-solid:focus {
-    text-decoration: none;
-    color: #fff; }
+  border: 4px solid #fff;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  padding: 1em;
+  display: inline-block;
+  text-decoration: none; }
 
-.button-solid-gray-dark {
-  border: 3px solid #404040;
-  padding: 0.5em 1em;
-  color: #404040; }
-  .button-solid-gray-dark:hover, .button-solid-gray-dark:focus {
-    text-decoration: none;
-    color: #404040; }
+.button-solid:hover, .button-solid:focus {
+  color: #cdcdcd;
+  border-color: #cdcdcd;
+  text-decoration: none; }
 
 .intro-header, .home-header {
   -webkit-background-size: cover;
@@ -253,9 +251,11 @@ blockquote {
 
 footer {
   padding: 50px 0 65px;
-  background-color: #000000; }
+  background-color: #212121; }
   footer .social a {
     color: #ffffff; }
+    footer .social a:hover, footer .social a:focus {
+      color: #3483a0; }
   footer .copyright {
     color: #ffffff;
     text-align: center;
@@ -401,10 +401,7 @@ footer {
   padding: 60px 0;
   color: #fff; }
   .home .music h4, .home .music .description {
-    padding: 1em;
-    text-align: center; }
-  .home .music .description {
-    text-align: left; }
+    padding: 1em; }
 .home .testimonial .testimonial-text .unslider {
   padding: 30px;
   color: #fff; }
