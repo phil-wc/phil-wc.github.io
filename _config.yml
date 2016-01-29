@@ -12,6 +12,7 @@ highlighter: pygments
 paginate: 5
 gems: ["jekyll-paginate"]
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+permalink: pretty
 
 
 # lazy declaration shit, so don't needed to define front matter every page
