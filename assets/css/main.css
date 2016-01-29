@@ -214,7 +214,7 @@ blockquote {
     color: #ffffff;
     text-align: center; }
     .intro-header .site-heading img, .home-header .site-heading img, .intro-header .post-heading img, .home-header .post-heading img, .intro-header .page-heading img, .home-header .page-heading img {
-      width: 20%;
+      width: 11%;
       height: auto; }
     .intro-header .site-heading h1, .home-header .site-heading h1, .intro-header .post-heading h1, .home-header .post-heading h1, .intro-header .page-heading h1, .home-header .page-heading h1 {
       font-size: 2.75rem;
@@ -410,3 +410,6 @@ footer {
   .home .posts .section-title {
     margin-bottom: 30px;
     color: white; }
+  .home .posts .older-post {
+    margin-top: 30px;
+    margin-bottom: 30px; }
