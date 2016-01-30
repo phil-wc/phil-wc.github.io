@@ -433,5 +433,12 @@ footer {
     margin-top: 30px;
     margin-bottom: 30px; }
 
+.services .overview .msm-link {
+  color: #00b3fe; }
+  .services .overview .msm-link:hover, .services .overview .msm-link:focus {
+    color: #35d9f9; }
+.services .equipment-instrument {
+  color: #000; }
+
 .works {
   color: #000; }
