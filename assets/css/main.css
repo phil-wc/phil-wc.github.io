@@ -1,10 +1,10 @@
-body, h1, h2, h3, h4, h5, h6, .intro-header .site-heading .subheading, .home-header .site-heading .subheading, .post-header .site-heading .subheading, .intro-header .post-heading .subheading, .home-header .post-heading .subheading, .post-header .post-heading .subheading, .intro-header .page-heading .subheading, .home-header .page-heading .subheading, .post-header .page-heading .subheading, footer {
+body, h1, h2, h3, h4, h5, h6, .intro-header .site-heading .subheading, .home-header .site-heading .subheading, .post-header .site-heading .subheading, .intro-header .post-heading .subheading, .home-header .post-heading .subheading, .post-header .post-heading .subheading, .intro-header .page-heading .subheading, .home-header .page-heading .subheading, .post-header .page-heading .subheading, footer, .home, .services .overview .msm-link {
   font-family: "Montserrat", sans-serif; }
 
 .pager li > span, .btn, .navbar-custom {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-.intro-header .post-heading .meta, .home-header .post-heading .meta, .post-header .post-heading .meta {
+.post-content p, .post-content a, .post-content strong, .post-content span, .post-content blockquote, .about p, .about span, .about strong, .about li, .about a, .albums p, .albums span, .albums strong, .albums li, .albums a, .contact p, .contact span, .contact strong, .contact li, .contact a, .news p, .news span, .news strong, .news li, .news a, .services p, .services span, .services strong, .services li, .services a, .works p, .works span, .works strong, .works li, .works a, .intro-header .post-heading .meta, .home-header .post-heading .meta, .post-header .post-heading .meta {
   font-family: "Lora", "Times New Roman", serif; }
 
 .home .testimonial .testimonial-text .unslider h3, .home .testimonial .testimonial-text .unslider h4 {
@@ -35,7 +35,7 @@ footer .list-inline, .home .testimonial .testimonial-text {
   transform: translate(-50%, -50%); }
 
 body {
-  font-size: 14px; }
+  font-size: 17px; }
 
 hr.small {
   max-width: 100px;
@@ -79,8 +79,8 @@ a {
     color: #225567; }
 
 p {
-  color: #000;
-  line-height: 1.5;
+  color: #404040;
+  line-height: 1.7;
   margin: 30px 0; }
   p a {
     text-decoration: underline; }
@@ -152,13 +152,13 @@ blockquote {
       font-size: 24px; } }
 
 .section-heading {
-  font-size: 14px;
+  font-size: 36px;
   margin-top: 60px;
   font-weight: 700; }
 
 .caption {
   text-align: center;
-  font-size: 14px;
+  font-size: 36px;
   padding: 10px;
   font-style: italic;
   margin: 0;
@@ -409,11 +409,11 @@ footer {
 
 .home .testimonial, .home .testimonial-text, .home .music {
   background-color: #3384a0; }
-.home .testimonial, .home .sample, .home .music, .home .recentpost, .home .news {
+.home .testimonial, .home .sample, .home .music, .home .recentpost, .home .recent-news {
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px; }
-.home .sample, .home .news {
+.home .sample, .home .recent-news {
   background: no-repeat center center;
   background-size: cover; }
 .home .profile .content {
@@ -446,12 +446,12 @@ footer {
 .home .testimonial .testimonial-text .unslider {
   padding: 30px;
   color: #fff; }
-.home .news {
+.home .recent-news {
   background-image: url("/assets/img/home/blog-section.jpg"); }
-  .home .news .section-title {
+  .home .recent-news .section-title {
     margin-bottom: 30px;
     color: white; }
-  .home .news .older-post {
+  .home .recent-news .older-post {
     margin-top: 30px;
     margin-bottom: 30px; }
 
