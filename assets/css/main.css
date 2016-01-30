@@ -184,6 +184,8 @@ blockquote {
   color: white; }
 
 .button-solid {
+  min-width: 200px;
+  text-align: center;
   border: 4px solid #fff;
   font-size: 20px;
   font-weight: 700;
@@ -199,6 +201,8 @@ blockquote {
   text-decoration: none; }
 
 .button-solid-black {
+  min-width: 200px;
+  text-align: center;
   border: 4px solid #000;
   font-size: 20px;
   font-weight: 700;
@@ -338,6 +342,21 @@ footer {
 
 .about .introduction .description {
   padding-left: 30px; }
+
+.albums .album-section-title {
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #000; }
+.albums .album-item {
+  margin-bottom: 30px; }
+  .albums .album-item .album-image, .albums .album-item .album-description {
+    display: inline-block; }
+  .albums .album-item .album-image {
+    float: left; }
+  .albums .album-item .album-description {
+    padding-left: 30px; }
+  .albums .album-item .album-description-mobile {
+    float: left; }
 
 .contact .floating-label-form-group {
   font-size: 14px;
