@@ -1,4 +1,4 @@
-body, h1, h2, h3, h4, h5, h6, .intro-header .site-heading .subheading, .home-header .site-heading .subheading, .post-header .site-heading .subheading, .intro-header .post-heading .subheading, .home-header .post-heading .subheading, .post-header .post-heading .subheading, .intro-header .page-heading .subheading, .home-header .page-heading .subheading, .post-header .page-heading .subheading, footer, .home, .services .overview .msm-link {
+body, h1, h2, h3, h4, h5, h6, a.button-solid, a.button-solid-black, .intro-header .site-heading .subheading, .home-header .site-heading .subheading, .post-header .site-heading .subheading, .intro-header .post-heading .subheading, .home-header .post-heading .subheading, .post-header .post-heading .subheading, .intro-header .page-heading .subheading, .home-header .page-heading .subheading, .post-header .page-heading .subheading, footer, .home, .services .overview .msm-link {
   font-family: "Montserrat", sans-serif; }
 
 .post-content p, .post-content a, .post-content strong, .post-content span, .post-content blockquote, .about p, .about span, .about strong, .about li, .about a, .albums p, .albums span, .albums strong, .albums li, .albums a, .contact p, .contact span, .contact strong, .contact li, .contact a, .news p, .news span, .news strong, .news li, .news a, .services p, .services span, .services strong, .services li, .services a, .works p, .works span, .works strong, .works li, .works a, .pager li > span, .btn, .navbar-custom {
@@ -183,7 +183,7 @@ blockquote {
   border: 1px solid #0085A1;
   color: white; }
 
-.button-solid {
+a.button-solid {
   min-width: 200px;
   text-align: center;
   border: 4px solid #fff;
@@ -195,12 +195,12 @@ blockquote {
   display: inline-block;
   text-decoration: none; }
 
-.button-solid:hover, .button-solid:focus {
+a.button-solid:hover, a.button-solid:focus {
   color: #cdcdcd;
   border-color: #cdcdcd;
   text-decoration: none; }
 
-.button-solid-black {
+a.button-solid-black {
   min-width: 200px;
   text-align: center;
   border: 4px solid #000;
@@ -212,7 +212,7 @@ blockquote {
   display: inline-block;
   text-decoration: none; }
 
-.button-solid-black:hover, .button-solid-black:focus {
+a.button-solid-black:hover, a.button-solid-black:focus {
   color: #4e4e4e;
   border-color: #4e4e4e;
   text-decoration: none; }
