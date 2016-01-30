@@ -37,9 +37,6 @@ footer .list-inline, .home .testimonial .testimonial-text {
 body {
   font-size: 14px; }
 
-a img:hover, a img:focus {
-  cursor: zoom-in; }
-
 hr.small {
   max-width: 100px;
   margin: 15px auto;
