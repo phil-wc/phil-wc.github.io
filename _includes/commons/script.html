@@ -6,6 +6,8 @@
 <!-- Custom Theme JavaScript -->
 <script src="{{ "/assets/js/clean-blog.min.js " | prepend: site.baseurl }}"></script>
 <script src="{{ "/assets/js/unslider-min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/lodash.js " | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/moment.js " | prepend: site.baseurl }}"></script>
 <script>
   (function() {
     var script = document.createElement("script");
@@ -49,5 +51,46 @@
       });
     });
   });
+
+// ajax shit
+$.ajax({ url: '/feed.xml',type: 'GET', dataType: 'xml',})
+  .done(function(data) {
+    var json_rss = parseRSS(data);
+    appendNewsPost(json_rss);
+  });
+
+var parseRSS = function (data){
+  var rsslist = [];
+  var $xml = $(data);
+
+  $xml.find("item").each(function() {
+    var $this = $(this),
+      item = {
+        title: $this.find("title").text(),
+        published: $this.find("pubDate").text(),
+        urlPath: $this.find("link").text(),
+        author: $this.find("author").text()
+    };
+
+    rsslist.puh(item);
+  });
+  return rsslist;
+};
+
+var appendNewsPost = function (rss) {
+  var template = $('.news-item-template').html();
+
+  _.each(rss,function (post) {
+    // replace
+    var markup = template;
+    markup = markup.replace('__URLPATH__',post.urlPath);
+    markup = markup.replace('__TITLE__',post.title);
+    markup = markup.replace('__PUBLISHED__',moment(post.published).format('MMMM, D YYYY'));
+    markup = markup.replace('__AUTHOR__',post.author ? post.author : 'CHAPAVICH');
+
+    $('.recent-news-list').append(markup);
+    // TODO: limit the post
+  });
+};
 
 </script>
