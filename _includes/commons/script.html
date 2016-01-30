@@ -53,13 +53,15 @@
   });
 
 // ajax shit
-$.ajax({ url: '/feed.xml',type: 'GET', dataType: 'xml',})
+var ajaxOptions = { url: '/feed.xml', type: 'GET', dataType: 'xml'}
+
+$.ajax(ajaxOptions)
   .done(function(data) {
-    var json_rss = parseRSS(data);
-    appendNewsPost(json_rss);
+    var json_rss = parseRSSFeed(data);
+    generateNewsPost(json_rss);
   });
 
-var parseRSS = function (data){
+var parseRSSFeed = function (data){
   var rsslist = [];
   var $xml = $(data);
 
@@ -71,19 +73,20 @@ var parseRSS = function (data){
         urlPath: $this.find("link").text(),
         author: $this.find("author").text()
     };
-
     rsslist.push(item);
   });
   return rsslist;
 };
 
-var appendNewsPost = function (rss) {
+var generateNewsPost = function (rss) {
   var template = $('.news-item-template').html();
+
   // slice the array, limited to three post
   var rssLimitedPost = _.slice(rss, 0, 3);
+
   _.each(rssLimitedPost, function (post) {
-    // replace
     var markup = template;
+
     markup = markup.replace('__URLPATH__',post.urlPath);
     markup = markup.replace('__TITLE__',post.title);
     markup = markup.replace('__PUBLISHED__',moment(post.published).format('MMMM, D YYYY'));
