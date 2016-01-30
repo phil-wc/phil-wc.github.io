@@ -35,7 +35,8 @@ footer .list-inline, .home .testimonial .testimonial-text {
   transform: translate(-50%, -50%); }
 
 body {
-  font-size: 17px; }
+  font-size: 17px;
+  line-height: 1.7; }
 
 hr.small {
   max-width: 100px;
