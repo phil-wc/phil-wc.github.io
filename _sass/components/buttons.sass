@@ -25,6 +25,7 @@
   font-weight: 700
   color: #fff
   padding: 1em
+  margin-bottom: ($default-margin / 3)
   display: inline-block
   text-decoration: none
 
@@ -32,4 +33,20 @@
 .button-solid:hover, .button-solid:focus
   color: $button-on-hover
   border-color: $button-on-hover
+  text-decoration: none
+
+.button-solid-black
+  border: 4px solid $site-text-color
+  font-size: 20px
+  font-weight: 700
+  color: $site-text-color
+  padding: 1em
+  margin-bottom: ($default-margin / 3)
+  display: inline-block
+  text-decoration: none
+
+
+.button-solid-black:hover, .button-solid-black:focus
+  color: darken($button-on-hover,50%)
+  border-color: darken($button-on-hover,50%)
   text-decoration: none
