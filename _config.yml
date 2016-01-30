@@ -10,6 +10,7 @@ url: "http://phil-wc.github.io"
 markdown: kramdown
 highlighter: pygments
 paginate: 6
+paginate_path: news/page/:num
 gems: ["jekyll-paginate"]
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 permalink: pretty
