@@ -1,34 +1,32 @@
 .pager
   margin: 20px 0 0
 
-  li
-    > a,
-    > a:hover,
-    > a:focus
-      color: white
+  li>a
+    color: #404040
+    @extend %secondary-font-family
+    text-transform: uppercase
+    font-size: 14px
+    font-weight: 800
+    letter-spacing: 1px
+    padding: 15px 25px
+    background-color: white
+    border-radius: 0
+
+    &:hover, &:focus
+      color: #fff
       background-color: $site-brand-color
       border: 1px solid $site-brand-color
 
-    > span
-      @extend %secondary-font-family
-      text-transform: uppercase
-      font-size: 14px
-      font-weight: 800
-      letter-spacing: 1px
-      padding: 10px 5px
-      background-color: white
-      border-radius: 0
 
       @media only screen and (min-width: 768px)
         font-size: 14px
         padding: 15px 25px
 
 
+
   .disabled
-    > a,
-    > a:hover,
-    > a:focus,
-    > span
-      color: $gray
-      background-color: $gray-dark
-      cursor: not-allowed
+    > a
+        &:hover, &:focus
+          color: $gray
+          background-color: $gray-dark
+          cursor: not-allowed
