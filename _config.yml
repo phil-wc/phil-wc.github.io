@@ -2,15 +2,14 @@
 title: CHAPAVICH TEMNITIKUL
 header-img: img/home-bg.jpg
 post-default-header-img: "assets/img/header/news-post-default.jpg"
-email: your-email@yourdomain.com
-description: "Write your site description here. It will be used as your sites meta description as well!"
+description: "Music for film, game, and multimedia"
 baseurl: ""
-url: "http://yourdomain.com"
+url: "http://phil-wc.github.io"
 
 # Build settings
 markdown: kramdown
 highlighter: pygments
-paginate: 5
+paginate: 6
 gems: ["jekyll-paginate"]
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 permalink: pretty
