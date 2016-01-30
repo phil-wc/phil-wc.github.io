@@ -9,6 +9,8 @@
 
   .navbar-brand
     font-weight: $navbar-font-weight
+    &:hover, &:focus
+      color: $navbar-hyperlink-text-color-on-hover
 
   .nav
     li
@@ -17,6 +19,8 @@
         font-size: $navbar-hyperlink-font-size
         font-weight: $navbar-font-weight
         letter-spacing: 1px
+        &:hover, &:focus
+          color: $navbar-hyperlink-text-color-on-hover
 
   // media queries
   @media only screen and (min-width: 768px)
