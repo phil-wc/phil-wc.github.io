@@ -7,7 +7,11 @@ module.exports = function(grunt) {
       main: {
         src: 'js/<%= pkg.name %>.js',
         dest: 'js/<%= pkg.name %>.min.js'
-      }
+      },
+      minified: {
+        src: 'assets/js/**.js',
+        dest: 'assets/js/web.min.js'
+      },
     },
     less: {
       expanded: {
@@ -69,6 +73,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify', 'less', 'usebanner']);
+  grunt.registerTask('default', ['uglify', 'uglify:minified', 'less', 'usebanner']);
 
 };
