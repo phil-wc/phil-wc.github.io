@@ -404,6 +404,8 @@ footer {
   color: #0085A1; }
 .contact form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eee; }
+.contact address strong, .contact address span {
+  color: #000; }
 
 .home .testimonial, .home .testimonial-text, .home .music {
   background-color: #3384a0; }
