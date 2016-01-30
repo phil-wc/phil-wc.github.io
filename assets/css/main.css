@@ -343,6 +343,8 @@ footer {
 .about .introduction .description {
   padding-left: 30px; }
 
+.albums .license-details, .albums .donation-description {
+  color: #000; }
 .albums .album-section-title {
   padding-bottom: 5px;
   margin-bottom: 30px;
@@ -356,7 +358,9 @@ footer {
   .albums .album-item .album-description {
     padding-left: 30px; }
   .albums .album-item .album-description-mobile {
-    float: left; }
+    overflow: auto; }
+    .albums .album-item .album-description-mobile .album-image-mobile {
+      float: none; }
 
 .contact .floating-label-form-group {
   font-size: 14px;
