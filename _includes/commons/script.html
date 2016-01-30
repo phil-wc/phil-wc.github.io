@@ -79,8 +79,9 @@ var parseRSS = function (data){
 
 var appendNewsPost = function (rss) {
   var template = $('.news-item-template').html();
-
-  _.each(rss,function (post) {
+  // slice the array, limited to three post
+  var rssLimitedPost = _.slice(rss, 0, 3);
+  _.each(rssLimitedPost, function (post) {
     // replace
     var markup = template;
     markup = markup.replace('__URLPATH__',post.urlPath);
@@ -89,7 +90,6 @@ var appendNewsPost = function (rss) {
     markup = markup.replace('__AUTHOR__',post.author ? post.author : 'CHAPAVICH');
 
     $('.recent-news-list').append(markup);
-    // TODO: limit the post
   });
 };
 
