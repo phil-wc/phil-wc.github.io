@@ -3,7 +3,7 @@ title: "News"
 header-img: "assets/img/header/news.jpg"
 ---
   <div class="news">
-  {% for post in paginator.posts limit:2%}
+  {% for post in paginator.posts%}
     <div class="post-preview">
       <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">{{ post.title }}</h2>
