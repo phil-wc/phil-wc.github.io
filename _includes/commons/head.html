@@ -28,7 +28,7 @@
 
   {% if page.kind == "post" %}
     <meta property="og:site_name" content="{{ site.title }} - {{ site.description }}"/>
-    <meta property="og:title"     content="{ page.title }}" />
+    <meta property="og:title"     content="{{ page.title }}" />
   {% elsif page.kind == "page" %}
     <meta property="og:site_name" content="{{ site.title }} - {{ site.description }}"/>
     <meta property="og:title"     content="{{ page.title }} - {{ site.title }}" />
