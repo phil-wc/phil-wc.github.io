@@ -88,9 +88,6 @@ p {
 blockquote {
   color: gray; }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #3384a0; }
-
 p, strong, span, li {
   color: #000; }
 
@@ -480,12 +477,6 @@ footer {
   .news .post-preview a:hover, .news .post-preview a:focus {
     color: #3384a0;
     text-decoration: none; }
-.news .post-preview .post-title {
-  color: #404040; }
-.news .post-preview .post-subtitle {
-  color: #404040; }
-.news .post-preview .post-subheading {
-  color: #404040; }
 .news .post-preview .post-meta {
   color: #808080; }
 
