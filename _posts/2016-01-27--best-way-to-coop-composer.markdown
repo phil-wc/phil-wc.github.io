@@ -7,7 +7,7 @@ author:     "Phil Chapavich T."
 header-img: "public/news/news-default.jpg"
 ---
 
-![Tips]({{site.url}}/public/news/2016-01-27-best/directortips.jpg) public\news\2016-01-27-best
+![Tips]({{site.url}}/public/news/2016-01-27-best/directortips.jpg)
 
 #### เคล็ดลับการวางแผนทำงานร่วมกับ composer เพื่อให้หนังของท่านออกมาสมบูรณ์ที่สุด
 
@@ -57,7 +57,7 @@ Director บางท่านอาจยังไม่ทราบว่า
 
 **เรียงลำดับจากดีที่สุดไปเสี่ยงที่สุด**
 
-![Info2]({{site.url}}/public/posts/2016-01-27-best/info2.jpg)
+![Info2]({{site.url}}/public/news/2016-01-27-best/info2.jpg)
 
 **1. ให้ระยะเวลาในการทำงานกว่า 3 เดือนขึ้นไป มีการคุยกันกับcomposer
     ช่วงเขียนสคริปต์เสร็จ หรือ ก่อนถ่ายหนัง**
