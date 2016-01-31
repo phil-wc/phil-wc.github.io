@@ -28,8 +28,7 @@ layout: default
         {{ content }}
 
         <hr>
-
-        <ul class="pager">
+        <ul class="pager hidden-xs">
           {% if page.previous.url %}
           <li class="previous">
             <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
@@ -42,6 +41,16 @@ layout: default
           {% endif %}
         </ul>
 
+        <!-- mobile -->
+        <div class="pager hidden-lg hidden-md hidden-sm visible-xs-block">
+          {% if page.previous.url %}
+              <a class="pager-mobile" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+            {% endif %}
+            <br>
+            {% if page.next.url %}
+              <a class="pager-mobile" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+          {% endif %}
+        </div>
       </div>
     </div>
   </div>

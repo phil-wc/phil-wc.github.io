@@ -1,7 +1,7 @@
 .pager
   margin: 20px 0 0
 
-  li>a
+  li>a, a, .pager-mobile
     color: #404040
     @extend %secondary-font-family
     text-transform: uppercase
@@ -11,6 +11,7 @@
     padding: 15px 25px
     background-color: white
     border-radius: 0
+    border: 1px solid #ddd
 
     &:hover, &:focus
       color: #fff
@@ -22,7 +23,8 @@
         font-size: 14px
         padding: 15px 25px
 
-
+  .pager-mobile
+    display: block
 
   .disabled
     > a
