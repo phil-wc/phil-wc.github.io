@@ -7,10 +7,9 @@ author:     "Phil Chapavich T."
 header-img: "public/news/news-default.jpg"
 ---
 
-<img src="{{ site.baseurl }}/public/posts/news/2016-01-27-best/directortips.jpg" alt="">
+![Tips]({{site.url}}/public/posts/news/2016-01-27-best/directortips.jpg)
 
-##### เคล็ดลับการวางแผนทำงานร่วมกับ composer
-    เพื่อให้หนังของท่านออกมาสมบูรณ์ที่สุด
+#### เคล็ดลับการวางแผนทำงานร่วมกับ composer เพื่อให้หนังของท่านออกมาสมบูรณ์ที่สุด
 
 Director บางท่านอาจยังไม่ทราบว่า
     เราควรจะวางแผนอย่างไรเพื่อที่จะทำงานกับ Composer หรือ คนแต่งดนตรีในภาพยนต์
@@ -20,9 +19,9 @@ Director บางท่านอาจยังไม่ทราบว่า
     จึงทำให้ยากลำบากต่อคนทำเสียง(รวมถึงคนทำ sound design, sfx ด้วย)
     และทำให้ทำงานออกมาไม่เต็มประสิทธิภาพแบบที่ควรจะเป็น
 
-<img src="{{ site.baseurl }}/public/posts/news/2016-01-27-best/info1.jpg" alt="">
+![Info1]({{site.url}}/public/posts/news/2016-01-27-best/info1.jpg)
 
-#### ปัจจัยสำคัญในการผลิตงานของ composer คือ
+### ปัจจัยสำคัญในการผลิตงานของ composer คือ
 
 **1. ระยะเวลาในการผลิต**
 
@@ -54,11 +53,11 @@ Director บางท่านอาจยังไม่ทราบว่า
 
 * * *
 
-#### วางแผนร่วมมือกับ composer ว่าอย่างไรจึงจะดีที่สุด (สำหรับหนังยาว)
+### วางแผนร่วมมือกับ composer ว่าอย่างไรจึงจะดีที่สุด (สำหรับหนังยาว)
 
 **เรียงลำดับจากดีที่สุดไปเสี่ยงที่สุด**
 
-<img src="{{ site.baseurl }}/public/posts/news/2016-01-27-best/info2.jpg" alt="">
+![Info2]({{site.url}}/public/posts/news/2016-01-27-best/info2.jpg)
 
 **1. ให้ระยะเวลาในการทำงานกว่า 3 เดือนขึ้นไป มีการคุยกันกับcomposer
     ช่วงเขียนสคริปต์เสร็จ หรือ ก่อนถ่ายหนัง**
