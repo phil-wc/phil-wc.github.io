@@ -7,7 +7,7 @@ author:     "Phil Chapavich T."
 header-img: "public/news/news-default.jpg"
 ---
 
-![Tips]({{site.url}}/public/news/2016-01-27-best/directortips.jpg)
+<img class="img-responsive" src="{{ site.baseurl }}/public/news/2016-01-27-best/directortips.jpg" alt="Image">
 
 #### เคล็ดลับการวางแผนทำงานร่วมกับ composer เพื่อให้หนังของท่านออกมาสมบูรณ์ที่สุด
 
@@ -19,7 +19,7 @@ Director บางท่านอาจยังไม่ทราบว่า
     จึงทำให้ยากลำบากต่อคนทำเสียง(รวมถึงคนทำ sound design, sfx ด้วย)
     และทำให้ทำงานออกมาไม่เต็มประสิทธิภาพแบบที่ควรจะเป็น
 
-![Info1]({{site.url}}/public/news/2016-01-27-best/info1.jpg)
+<img class="img-responsive" src="{{ site.baseurl }}/public/news/2016-01-27-best/info1.jpg" alt="Image">
 
 ### ปัจจัยสำคัญในการผลิตงานของ composer คือ
 
@@ -57,7 +57,7 @@ Director บางท่านอาจยังไม่ทราบว่า
 
 **เรียงลำดับจากดีที่สุดไปเสี่ยงที่สุด**
 
-![Info2]({{site.url}}/public/news/2016-01-27-best/info2.jpg)
+<img class="img-responsive" src="{{ site.baseurl }}/public/news/2016-01-27-best/info2.jpg" alt="Image">
 
 **1. ให้ระยะเวลาในการทำงานกว่า 3 เดือนขึ้นไป มีการคุยกันกับcomposer
     ช่วงเขียนสคริปต์เสร็จ หรือ ก่อนถ่ายหนัง**

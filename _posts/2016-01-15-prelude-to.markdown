@@ -6,7 +6,8 @@ date:       2016-01-15 12:00:00
 author:     "Phil Chapavich T."
 header-img: "assets/img/header/credits.jpg"
 ---
-![image](http://40.media.tumblr.com/a26062e61c6233d0fccebd92f78a79fe/tumblr_o1tln0EdBJ1rv4foko1_1280.jpg)
+
+<img src="http://40.media.tumblr.com/a26062e61c6233d0fccebd92f78a79fe/tumblr_o1tln0EdBJ1rv4foko1_1280.jpg" class="img-responsive">
 
 <p><h2>‘Prelude to the General’ will be premiere at 66th Berlinale</h2>
 <p>Official Poster of <b>PRELUDE TO THE GENERAL</b>.(design by Benjarat Choonuan)
