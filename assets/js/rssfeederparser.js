@@ -18,7 +18,6 @@ var RSSUtils = {
           title: $this.find("title").text(),
           published: $this.find("pubDate").text(),
           urlPath: $this.find("link").text(),
-          author: $this.find("author").text()
       };
       rsslist.push(item);
     });
