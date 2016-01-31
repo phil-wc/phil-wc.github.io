@@ -188,7 +188,7 @@ p, strong, span, li {
 
 .btn-default:hover, .btn-default:focus {
   background-color: #0085A1;
-  border: 1px solid #0085A1;
+  border: 2px solid #0085A1;
   color: white; }
 
 a.button-solid {
