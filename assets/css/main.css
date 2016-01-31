@@ -488,3 +488,27 @@ footer {
     color: #35d9f9; }
 .services .equipment-instrument {
   color: #000; }
+
+.heading-color {
+  color: #ffffff !important; }
+
+.text-white {
+  color: #ffffff !important; }
+
+.text-black {
+  color: #000000 !important; }
+
+.text-primary-brand-color {
+  color: #0085A1 !important; }
+
+.text-primary-site-color {
+  color: #3384a0 !important; }
+
+.text-primary-content-color {
+  color: #404040 !important; }
+
+.text-hyperlink-primary-color {
+  color: #3384a0 !important; }
+
+.text-hyperlink-secondary-color {
+  color: #00b3fe !important; }
