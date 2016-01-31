@@ -477,6 +477,10 @@ footer {
   .news .post-preview a:hover, .news .post-preview a:focus {
     color: #3384a0;
     text-decoration: none; }
+.news .post-preview .post-title {
+  color: #404040; }
+.news .post-preview .post-subtitle {
+  color: #404040; }
 .news .post-preview .post-subheading {
   color: #404040; }
 .news .post-preview .post-meta {
