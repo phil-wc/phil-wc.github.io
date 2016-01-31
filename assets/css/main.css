@@ -179,8 +179,8 @@ p, strong, span, li {
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
-  border-radius: 0;
-  border: 2px solid rgba(0, 0, 0, 0.1);}
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0; }
 
 .btn-lg {
   font-size: 16px;
