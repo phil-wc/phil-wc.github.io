@@ -259,7 +259,7 @@ a.button-solid-black:hover, a.button-solid-black:focus {
       .intro-header .site-heading h1, .home-header .site-heading h1, .post-header .site-heading h1, .intro-header .post-heading h1, .home-header .post-heading h1, .post-header .post-heading h1, .intro-header .page-heading h1, .home-header .page-heading h1, .post-header .page-heading h1 {
         font-size: 48px; } }
   .intro-header .post-heading .subheading, .home-header .post-heading .subheading, .post-header .post-heading .subheading {
-    font-weight: 600;
+    font-weight: 400;
     margin: 10px 0 30px; }
   .intro-header .post-heading .meta, .home-header .post-heading .meta, .post-header .post-heading .meta {
     font-size: 20px;
@@ -481,6 +481,8 @@ footer {
   .news .post-preview a:hover, .news .post-preview a:focus {
     color: #3384a0;
     text-decoration: none; }
+  .news .post-preview a .post-subtitle {
+    font-weight: 400; }
 .news .post-preview .post-meta {
   color: #808080; }
 
