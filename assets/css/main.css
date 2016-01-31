@@ -80,7 +80,6 @@ a {
     color: #225567; }
 
 p {
-  color: #404040;
   line-height: 1.7;
   margin: 30px 0; }
   p a {
@@ -88,6 +87,12 @@ p {
 
 blockquote {
   color: gray; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #3384a0; }
+
+p, strong, span, li {
+  color: #000; }
 
 .pager {
   margin: 20px 0 0; }
@@ -471,7 +476,4 @@ footer {
   .services .overview .msm-link:hover, .services .overview .msm-link:focus {
     color: #35d9f9; }
 .services .equipment-instrument {
-  color: #000; }
-
-.works {
   color: #000; }
