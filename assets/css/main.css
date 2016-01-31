@@ -174,12 +174,13 @@ p, strong, span, li {
   border-bottom-left-radius: 5px; }
 
 .btn {
-  padding: 15px 25px;
+  padding: 20px 25px;
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
-  border-radius: 0; }
+  border-radius: 0;
+  border: 2px solid rgba(0, 0, 0, 0.1);}
 
 .btn-lg {
   font-size: 16px;
@@ -187,7 +188,7 @@ p, strong, span, li {
 
 .btn-default:hover, .btn-default:focus {
   background-color: #0085A1;
-  border: 1px solid #0085A1;
+  border: 2px solid #0085A1;
   color: white; }
 
 a.button-solid {

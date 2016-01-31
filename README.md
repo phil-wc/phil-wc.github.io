@@ -23,8 +23,12 @@ You can run `jekyll serve --watch` and `grunt watch` at the same time to watch f
 
 ## component
 
-### _sass/utils ไว้แก้สี text
+# Regarding utitities class
 
+
+Here's availble class for using to override colors.
+
+```
 .heading-color
   color: #ffffff !important
 
@@ -49,10 +53,18 @@ You can run `jekyll serve --watch` and `grunt watch` at the same time to watch f
 .text-hyperlink-secondary-color
   color: #00b3fe !important
 
-### solid button
 
-***
+// Button class
 
-<a class="button-solid-black" href="#"> &ndash; XX &ndash; </a>
+.button-solid
 
-***
+.button-solid-black
+
+
+
+(should be literally easy to understand)
+```
+
+What you needed to do is just call the class into it.
+
+**REMARKS: both button works only anchor tag `<a></a>`**
