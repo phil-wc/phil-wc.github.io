@@ -7,7 +7,7 @@ author:     "Phil Chapavich T."
 header-img: "assets/img/header/credits.jpg"
 ---
 
-<img src="http://40.media.tumblr.com/a26062e61c6233d0fccebd92f78a79fe/tumblr_o1tln0EdBJ1rv4foko1_1280.jpg" class="img-responsive">
+<img src="http://40.media.tumblr.com/a26062e61c6233d0fccebd92f78a79fe/tumblr_o1tln0EdBJ1rv4foko1_1280.jpg">
 
 <p><h2>‘Prelude to the General’ will premiere at 66th Berlinale</h2>
 <p>Official Poster of <b>PRELUDE TO THE GENERAL</b>.(design by Benjarat Choonuan)
@@ -15,5 +15,5 @@ header-img: "assets/img/header/credits.jpg"
 
 <p>This film is gonna be premiere in 66th Berlinale. Original score by me.</p>
 
-<p>Press Releases 
+<p>Press Releases
 <a href="https://www.berlinale.de/en/presse/pressemitteilungen/berlinale_shorts/shorts-presse-detail_30485.html">https://www.berlinale.de/en/presse/pressemitteilungen/berlinale_shorts/shorts-presse-detail_30485.html</a></p></p>
