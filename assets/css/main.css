@@ -1,7 +1,7 @@
 body, h1, h2, h3, h4, h5, h6, a.button-solid, a.button-solid-black, .intro-header .site-heading .subheading, .home-header .site-heading .subheading, .post-header .site-heading .subheading, .intro-header .post-heading .subheading, .home-header .post-heading .subheading, .post-header .post-heading .subheading, .intro-header .page-heading .subheading, .home-header .page-heading .subheading, .post-header .page-heading .subheading, footer, .home, .services .overview .msm-link {
   font-family: "Montserrat", sans-serif; }
 
-.post-content p, .post-content a, .post-content strong, .post-content span, .post-content blockquote, .about p, .about span, .about strong, .about li, .about a, .albums p, .albums span, .albums strong, .albums li, .albums a, .contact p, .contact span, .contact strong, .contact li, .contact a, .news p, .news span, .news strong, .news li, .news a, .services p, .services span, .services strong, .services li, .services a, .works p, .works span, .works strong, .works li, .works a, .pager li > a, .btn, .navbar-custom {
+.post-content p, .post-content a, .post-content strong, .post-content span, .post-content blockquote, .about p, .about span, .about strong, .about li, .about a, .albums p, .albums span, .albums strong, .albums li, .albums a, .contact p, .contact span, .contact strong, .contact li, .contact a, .news p, .news span, .news strong, .news li, .news a, .services p, .services span, .services strong, .services li, .services a, .works p, .works span, .works strong, .works li, .works a, .pager li > a, .pager a, .pager .pager-mobile, .btn, .navbar-custom {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .intro-header .post-heading .meta, .home-header .post-heading .meta, .post-header .post-heading .meta, .news .post-preview .post-meta {
@@ -99,7 +99,7 @@ p, strong, span, li {
 
 .pager {
   margin: 20px 0 0; }
-  .pager li > a {
+  .pager li > a, .pager a, .pager .pager-mobile {
     color: #404040;
     text-transform: uppercase;
     font-size: 14px;
@@ -107,15 +107,18 @@ p, strong, span, li {
     letter-spacing: 1px;
     padding: 15px 25px;
     background-color: white;
-    border-radius: 0; }
-    .pager li > a:hover, .pager li > a:focus {
+    border-radius: 0;
+    border: 1px solid #ddd; }
+    .pager li > a:hover, .pager li > a:focus, .pager a:hover, .pager a:focus, .pager .pager-mobile:hover, .pager .pager-mobile:focus {
       color: #fff;
       background-color: #0085A1;
       border: 1px solid #0085A1; }
       @media only screen and (min-width: 768px) {
-        .pager li > a:hover, .pager li > a:focus {
+        .pager li > a:hover, .pager li > a:focus, .pager a:hover, .pager a:focus, .pager .pager-mobile:hover, .pager .pager-mobile:focus {
           font-size: 14px;
           padding: 15px 25px; } }
+  .pager .pager-mobile {
+    display: block; }
   .pager .disabled > a:hover, .pager .disabled > a:focus {
     color: gray;
     background-color: #404040;
