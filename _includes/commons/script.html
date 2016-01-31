@@ -13,7 +13,9 @@
 <script src="{{ "/assets/js/rssfeederparser.js " | prepend: site.baseurl }}"></script>
 <script src="{{ "/assets/js/unslider-init.js " | prepend: site.baseurl }}"></script>
 {% endif %}
-
 {% if page.title == "Page not found" %}
 <script src="{{ "/assets/js/replace-on-page-not-found.js " | prepend: site.baseurl }}"></script>
+{% endif %}
+{% if page.kind == "post" %}
+<script src="{{ "/assets/js/wrap-image-on-news-post.js " | prepend: site.baseurl }}"></script>
 {% endif %}

@@ -30,8 +30,10 @@ defaults:
       type: "pages"
     values:
       layout: "page"
+      kind: "page"
   -
     scope:
       type: "posts"
     values:
       layout: "post"
+      kind: "post"
