@@ -36,7 +36,6 @@ var RSSUtils = {
       markup = markup.replace('__URLPATH__',post.urlPath);
       markup = markup.replace('__TITLE__',post.title);
       markup = markup.replace('__PUBLISHED__',moment(post.published).format('MMMM, D YYYY'));
-      markup = markup.replace('__AUTHOR__',post.author ? post.author : 'CHAPAVICH');
 
       $('.recent-news-list').append(markup);
     });
