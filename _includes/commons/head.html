@@ -26,16 +26,39 @@
   <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
+  <link href="/assets/img/icon/apple-touch-icon-57x57.png" rel="apple-touch-icon-precomposed" sizes="57x57"/>
+  <link href="/assets/img/icon/apple-touch-icon-114x114.png" rel="apple-touch-icon-precomposed" sizes="114x114"/>
+  <link href="/assets/img/icon/apple-touch-icon-72x72.png" rel="apple-touch-icon-precomposed" sizes="72x72"/>
+  <link href="/assets/img/icon/apple-touch-icon-144x144.png" rel="apple-touch-icon-precomposed" sizes="144x144"/>
+  <link href="/assets/img/icon/apple-touch-icon-60x60.png" rel="apple-touch-icon-precomposed" sizes="60x60"/>
+  <link href="/assets/img/icon/apple-touch-icon-120x120.png" rel="apple-touch-icon-precomposed" sizes="120x120"/>
+  <link href="/assets/img/icon/apple-touch-icon-76x76.png" rel="apple-touch-icon-precomposed" sizes="76x76"/>
+  <link href="/assets/img/icon/apple-touch-icon-152x152.png" rel="apple-touch-icon-precomposed" sizes="152x152"/>
+  <link href="/assets/img/icon/favicon-196x196.png" sizes="196x196" rel="icon" type="image/png" />
+  <link href="/assets/img/icon/favicon-96x96.png" sizes="96x96" rel="icon" type="image/png" />
+  <link href="/assets/img/icon/favicon-32x32.png" sizes="32x32" rel="icon" type="image/png" />
+  <link href="/assets/img/icon/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png" />
+  <link href="/assets/img/icon/favicon-128.png" sizes="128x128" rel="icon" type="image/png" />
+
+  <meta content="{{ site.title }}" name="application-name"/>
+  <meta content="#FFFFFF" name="msapplication-TileColor"/>
+  <meta content="/assets/img/icon/mstile-144x144.png" name="msapplication-TileImage"  />
+  <meta content="/assets/img/icon/mstile-70x70.png"   name="msapplication-square70x70logo"  />
+  <meta content="/assets/img/icon/mstile-150x150.png" name="msapplication-square150x150logo"  />
+  <meta content="/assets/img/icon/mstile-310x150.png" name="msapplication-wide310x150logo"  />
+  <meta content="/assets/img/icon/mstile-310x310.png" name="msapplication-square310x310logo"  />
+
+
   {% if page.kind == "post" %}
-    <meta property="og:site_name" content="{{ site.title }} - {{ site.description }}"/>
-    <meta property="og:title"     content="{{ page.title }}" />
+  <meta property="og:site_name" content="{{ site.title }} - {{ site.description }}"/>
+  <meta property="og:title"     content="{{ page.title }}" />
   {% elsif page.kind == "page" %}
-    <meta property="og:site_name" content="{{ site.title }} - {{ site.description }}"/>
-    <meta property="og:title"     content="{{ page.title }} - {{ site.title }}" />
+  <meta property="og:site_name" content="{{ site.title }} - {{ site.description }}"/>
+  <meta property="og:title"     content="{{ page.title }} - {{ site.title }}" />
   {% endif %}
   <meta property="og:type"      content="website" />
   <meta property="og:url"       content="{{ site.url }}/{{ page.url }}" />
-  <meta property="og:image"     content="{{ "/assets/ico/favicon.ico" | prepend: site.url }}" />
+  <meta property="og:image"     content="{{ "/assets/img/ico/favicon.ico" | prepend: site.url }}" />
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
