@@ -21,6 +21,34 @@ A Grunt environment is also included. There are a number of tasks it performs li
 
 You can run `jekyll serve --watch` and `grunt watch` at the same time to watch for changes and then build them all at once.
 
-## Support
+## component
 
-Visit Clean Blog's template overview page on Start Bootstrap at http://startbootstrap.com/template-overviews/clean-blog/ and leave a comment, email feedback@startbootstrap.com, or open an issue here on GitHub for support.
+### _sass/utils ไว้แก้สี text
+
+.heading-color
+  color: #ffffff !important
+
+.text-white
+  color: #ffffff !important
+
+.text-black
+  color: #000000 !important
+
+.text-primary-brand-color
+  color: #0085A1 !important
+
+.text-primary-site-color
+  color: #3384a0 !important
+
+.text-primary-content-color
+  color: #404040 !important
+
+.text-hyperlink-primary-color
+  color: #3384a0 !important
+
+.text-hyperlink-secondary-color
+  color: #00b3fe !important
+
+### solid button
+
+<a class="button-solid-black" href="#"> &ndash; XX &ndash; </a>
