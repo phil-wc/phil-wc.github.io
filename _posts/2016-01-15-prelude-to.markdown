@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "‘Prelude to the General’ will premiere at 66th Berlinale"
-subtitle:   "Berlinale Press Releases"
+subtitle:   "Berlinale Press Releases & schedule"
 date:       2016-01-15 12:00:00
 author:     "Phil Chapavich T."
 header-img: "assets/img/header/credits.jpg"
@@ -17,3 +17,7 @@ header-img: "assets/img/header/credits.jpg"
 
 <p>Press Releases
 <a href="https://www.berlinale.de/en/presse/pressemitteilungen/berlinale_shorts/shorts-presse-detail_30485.html">https://www.berlinale.de/en/presse/pressemitteilungen/berlinale_shorts/shorts-presse-detail_30485.html</a></p></p>
+
+Schedule
+
+[http://www.berlinale.de/en/programm/berlinale_programm/programmsuche.php?screenings=efm_festival&page=1&order_by=1&documentary&section_id=0&cinema_id=0&country_id=73&date_id=0&time_id=0&filterSubmit=Filter](http://www.berlinale.de/en/programm/berlinale_programm/programmsuche.php?screenings=efm_festival&page=1&order_by=1&documentary&section_id=0&cinema_id=0&country_id=73&date_id=0&time_id=0&filterSubmit=Filter)
