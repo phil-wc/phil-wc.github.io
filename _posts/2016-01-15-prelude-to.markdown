@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "‘Prelude to the General’ will be premiere at 66th Berlinale"
+title:      "‘Prelude to the General’ will premiere at 66th Berlinale"
 subtitle:   "Berlinale Press Releases"
 date:       2016-01-15 12:00:00
 author:     "Phil Chapavich T."
