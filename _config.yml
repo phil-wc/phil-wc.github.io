@@ -4,7 +4,7 @@ header-img: img/home-bg.jpg
 post-default-header-img: "assets/img/header/news-post-default.jpg"
 description: "Phil Chapavich | Film, game, and multimedia composer"
 baseurl: ""
-url: "http://phil-wc.github.io"
+url: "http://www.phil-wc.com"
 
 # Build settings
 markdown: kramdown
