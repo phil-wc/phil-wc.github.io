@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "'The Blue Hour' Reviewed on Hollywood Reporter"
+title:      "'The Blue Hour' Reviewed by The Hollywood Reporter"
 subtitle:   "featured Chapavich in review"
 date:       2015-02-17 12:00:00
 author:     "Phil Chapavich T."
