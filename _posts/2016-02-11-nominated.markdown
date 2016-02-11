@@ -27,7 +27,7 @@ header-img: "public/news/2015-01-17-the/header2.jpg"
 - Best Original Score
 - Best New Director (Judged by first feature film that screen in cinema)
 
-The award will announce in 23th March 2016
+The award will announce in 23rd March 2016
 
 Read more(Thai):
 [http://www.flickz.net/flickz-news-24th-bkk-assembly-nominations/](http://www.flickz.net/flickz-news-24th-bkk-assembly-nominations/)
