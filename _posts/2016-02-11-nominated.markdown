@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Best original score nominated from film 'The Blue Hour'"
-subtitle:   "by Bangkok Critics Assembly 24th"
+subtitle:   "along with other 11 nominations by Bangkok Critics Assembly 24th"
 date:       2016-02-11 12:00:00
 author:     "Phil Chapavich T."
 header-img: "public/news/2015-01-17-the/header2.jpg"
