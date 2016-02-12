@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "Best original score nominated from film 'The Blue Hour'"
-subtitle:   "along with other 10 nominations by Bangkok Critics Assembly 24th"
+title:      "Best original score nomination from film 'The Blue Hour'"
+subtitle:   "along with other 10 nominated by Bangkok Critics Assembly 24th"
 date:       2016-02-11 12:00:00
 author:     "Phil Chapavich T."
 header-img: "public/news/2015-01-17-the/header2.jpg"
@@ -13,7 +13,7 @@ header-img: "public/news/2015-01-17-the/header2.jpg"
 
 "The Blue Hour" was nominated for 11 awards by Bangkok Critics Assembly 26th including Original Score by Chapavich Temnitikul.
 
-#### 11 Nominated for:
+#### 11 Nominations for:
 
 - Best Picture
 - Best Director

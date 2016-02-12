@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Best original score nominated from film 'W'"
+title:      "Best original score nomination from film 'W'"
 subtitle:   "by Bangkok Critics Assembly"
 date:       2015-03-27 12:00:00
 author:     "Phil Chapavich T."
