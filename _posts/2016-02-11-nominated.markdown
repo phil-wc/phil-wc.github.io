@@ -9,10 +9,13 @@ header-img: "public/news/2015-01-17-the/header2.jpg"
 
 ### Summary: Best Original Score
 
-#### 3 Nominated by
+#### 1 Best original score Award by
+
+- Starpics Thai Film Awards 13th
+
+#### 2 Best original score Nominations by
 
 - Bangkok Critics Assembly 26th
-- Starpics Thai Film Awards 13th
 - Supannahong Awards 25th
 
 ---
