@@ -430,7 +430,7 @@ footer {
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px; }
-.home .sample, .home .recent-news {
+.home .sample, .home .recent-news, .home .thebluehour {
   background: no-repeat center center;
   background-size: cover; }
 .home .profile .content {
@@ -455,6 +455,15 @@ footer {
     padding: 0 30px; }
   .home .sample .description .content {
     width: 60%; }
+.home .thebluehour {
+  background-image: url("/assets/img/home/tbhbg.jpg");
+  padding-top: 150px;
+  padding-bottom: 150px; }
+  .home .thebluehour .description {
+    padding: 0 30px; }
+  .home .thebluehour .description .content {
+    width: 100%;
+    color: #ffffff; }
 .home .music {
   padding: 60px 0; }
   .home .music h4, .home .music .description {

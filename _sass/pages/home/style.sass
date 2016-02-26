@@ -11,7 +11,7 @@
     padding-top: $default-padding
     padding-bottom: $default-padding
 
-  .sample, .recent-news
+  .sample, .recent-news, .thebluehour
     background: no-repeat center center
     background-size: cover
 
@@ -49,6 +49,18 @@
     #js-player-container-default, #js-player-container-mobile
       @extend %margin-left-right-default
 
+  .thebluehour
+    background-image: url('/assets/img/home/tbhbg.jpg')
+    padding-top: 150px
+    padding-bottom: 150px
+
+    .description
+      padding: 0 $default-padding
+
+    .description
+      .content
+        width: 100%
+        color: #ffffff
 
   .music
     padding: ($default-padding * 2) 0
