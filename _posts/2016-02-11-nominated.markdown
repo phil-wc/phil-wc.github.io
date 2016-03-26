@@ -1,21 +1,21 @@
 ---
 layout:     post
 title:      "Summary: Nominations and Awards from film 'The Blue Hour' in 2016"
-subtitle:   "in best original score and other awards. updated:18/2/2016"
+subtitle:   "in best original score and other awards."
 date:       2016-02-11 12:00:00
 author:     "Phil Chapavich T."
 header-img: "public/news/2015-01-17-the/header2.jpg"
 ---
 
-### Summary: Best Original Score
+### Summary: Best Original Score from film 'The Blue Hour'
 
-#### 1 Best original score Award by
+#### 2 Best original score Award by
 
 - Starpics Thai Film Awards 13th
-
-#### 2 Best original score Nominations by
-
 - Bangkok Critics Assembly 26th
+
+#### 1 Best original score Nominations by
+
 - Supannahong Awards 25th
 
 ---
