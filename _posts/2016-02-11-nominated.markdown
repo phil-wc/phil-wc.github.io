@@ -7,6 +7,8 @@ author:     "Phil Chapavich T."
 header-img: "public/news/2015-01-17-the/header2.jpg"
 ---
 
+<img class="center-block" src="{{ site.baseurl }}/public/news/2016-02-11/S__39608333.jpg" alt="Image">
+
 ### Summary: Best Original Score from film 'The Blue Hour'
 
 #### 2 Best original score Award by
