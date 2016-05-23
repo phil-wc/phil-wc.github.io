@@ -1,0 +1,44 @@
+---
+layout:     post
+title:      "The Process of Film Scoring (TL;DR version)"
+subtitle:   "Too long, didn't read version"
+date:       2016-05-22 12:00:00
+author:     "Phil Chapavich T."
+header-img: "public/news/news-default.jpg"
+---
+
+<br>
+
+## The Process of Film Scoring (TL;DR version)
+
+### เวอร์ชั่นสำหรับคนขี้เกียจอ่าน
+
+*เรียงขั้นตอนจากบนลงล่าง
+
+<br>
+
+<img class="center-block" src="{{ site.baseurl }}/public/news/2016-05-22/process-film-score.jpg" alt="Image">
+
+จากภาพ การทำ Film Score จะมีขั้นตอนคร่าวๆประมานนั้น ซึ่งโดยใช้เวลาโดยรวมมาตรฐานประมาน 3 เดือน
+
+-----
+
+### Definition
+
+**Music Editor:** คนที่สามารถตัดต่อเสียง และวาง temp score ตามอารมณ์ของหนัง
+
+**Temp Score:** Temporary Score เพลงของคนอื่นที่นำมาใช้ชั่วคราวเพื่อบอก mood ของหนังคร่าวๆ ก่อนที่จะไปแต่งจริงๆ
+
+**Spotting Session:** ช่วงที่พูดคุยถกเถียงกันว่าเพลงจะเป็นอย่างไร เข้าออกตรงไหน
+
+**Synth Programming:** การสร้างเสียงสังเคราะห์ในหนังส่วนที่เป็น Electronic หรือคนที่ช่วยจัดการการใช้ DAW (โปรแกรม workstation ทำเพลง)
+
+**Mock-Ups:** demo ตัวอย่างเพลงถูกสร้างจากเสียงแซมเปิ้ล (sample)
+
+**Orchestrator:** ผู้ที่เรียบเรียงเสียงประสานให้ออเคสตร้า
+
+**Copyist:** คน copy สกอร์ แยก parts เพื่อน้ำไปใช้อัดวงออเคสตร้า และตรวจความเรียบร้อยของโน๊ตเพลง
+
+**Recording Session:** การอัดเสียงเครื่องดนตรีจริง
+
+**Dubbing:** มิกซ์เสียงรวมเข้ากับ sound fx และ dialogue
