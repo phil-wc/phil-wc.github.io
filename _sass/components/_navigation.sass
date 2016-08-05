@@ -1,5 +1,6 @@
 .navbar-custom
   @extend %secondary-font-family
+
   background: #ffffff
   position: absolute
   top: 0
@@ -9,7 +10,9 @@
 
   .navbar-brand
     font-weight: $navbar-font-weight
-    &:hover, &:focus
+
+    &:hover,
+    &:focus
       color: $navbar-hyperlink-text-color-on-hover
 
   .nav
@@ -19,7 +22,9 @@
         font-size: $navbar-hyperlink-font-size
         font-weight: $navbar-font-weight
         letter-spacing: 1px
-        &:hover, &:focus
+
+        &:hover,
+        &:focus
           color: $navbar-hyperlink-text-color-on-hover
 
   // media queries
@@ -30,14 +35,19 @@
     .navbar-brand
       color: #ffffff
       padding: $navbar-text-padding
-      &:hover, &:focus
+
+      &:hover,
+      &:focus
         color: $white-faded
+
     .nav
       li
         a
           color: #ffffff
           padding: $navbar-text-padding
-          &:hover, &:focus
+
+          &:hover,
+          &:focus
             color: $white-faded
 
   @media only screen and (min-width: 1170px)
@@ -61,14 +71,17 @@
 
       .navbar-brand
         color: $gray-dark
-        &:hover, &:focus
+
+        &:hover,
+        &:focus
           color: $site-brand-color
 
       .nav
         li
           a
             color: $gray-dark
-            &:hover, &:focus
+            &:hover,
+            &:focus
               color: $site-brand-color
 
     &.is-visible

@@ -4,7 +4,9 @@
   background-color: $gray
   background-attachment: scroll
 
-  .site-heading, .post-heading, .page-heading
+  .site-heading,
+  .post-heading,
+  .page-heading
     padding-top: $header-padding-top
     padding-right: 0
     padding-bottom: $header-padding-bottom
@@ -22,6 +24,7 @@
 
     .subheading
       @extend %primary-font-family
+
       color: $header-text-color
       font-size: $subheading-font-size
       font-weight: $subheading-font-weight
@@ -39,6 +42,7 @@
 
     .meta
       @extend %serif-font-family
+
       font-size: $post-meta-font-size
       font-weight: $subheading-font-weight
       line-height: $post-meta-line-height
@@ -53,9 +57,11 @@
 
 .home-header
   @extend .intro-header
+
   background-image: url('/assets/img/home/header-bg.jpg')
   min-height: $header-home-min-height
 
 .post-header
   @extend .intro-header
+
   background-image: url('/assets/img/header/news-post-default.jpg')

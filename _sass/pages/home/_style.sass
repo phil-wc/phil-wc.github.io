@@ -1,17 +1,23 @@
-@import "variables"
-
 .home
   @extend %primary-font-family
 
-  .testimonial, .testimonial-text, .music
+  .testimonial,
+  .testimonial-text,
+  .music
     background-color: $site-primary-color
 
-  .testimonial, .sample, .music, .recentpost, .recent-news
+  .testimonial,
+  .sample,
+  .music,
+  .recentpost,
+  .recent-news
     width: 100%
     padding-top: $default-padding
     padding-bottom: $default-padding
 
-  .sample, .recent-news, .thebluehour
+  .sample,
+  .recent-news,
+  .thebluehour
     background: no-repeat center center
     background-size: cover
 
@@ -20,6 +26,7 @@
 
     .content
       @extend %reset-padding
+
       overflow: hidden
 
       .button-center-container
@@ -46,11 +53,12 @@
       .content
         width: 60%
 
-    #js-player-container-default, #js-player-container-mobile
+    #js-player-container-default,
+    #js-player-container-mobile
       @extend %margin-left-right-default
 
   .thebluehour
-    background-image: url('/assets/img/home/tbhbg.jpg')
+    background-color: #14202c
     padding-top: 150px
     padding-bottom: 150px
 
@@ -65,7 +73,8 @@
   .music
     padding: ($default-padding * 2) 0
 
-    h4, .description
+    h4,
+    .description
       color: #fff
       padding: $default-padding-em
 
@@ -78,7 +87,8 @@
         padding: $default-padding
         color: #ffffff
 
-        h3,h4
+        h3,
+        h4
           @extend %lighten-font-weight
           color: #ffffff
 
@@ -88,6 +98,7 @@
     .section-title
       margin-bottom: $default-margin
       color: #ffffff
+
       h1
         color: #ffffff
 

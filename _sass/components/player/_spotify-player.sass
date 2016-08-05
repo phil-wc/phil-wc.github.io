@@ -1,0 +1,20 @@
+.player-widget
+  background-color: #14202c
+
+  .spotify-embed
+    background: #282828
+
+  .spotify-embed:not(:last-of-type)
+    margin-bottom: 5px
+
+  .spotify-embed iframe
+    display: block
+    -webkit-transition: opacity 0.125s
+    transition: opacity 0.125s
+
+  .js .spotify-embed iframe
+    opacity: 0
+
+  .js .spotify-embed iframe.loaded
+    opacity: 1
+

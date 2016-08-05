@@ -1,0 +1,30 @@
+body
+  @extend %primary-font-family
+
+blockquote
+  font-style: italic
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  @extend %primary-font-family
+  font-weight: $heading-font-weight
+
+.about,
+.albums,
+.contact,
+.news,
+.services,
+.works
+  p,
+  span,
+  strong,
+  li,
+  a
+    @extend %secondary-font-family
+
+// lato
+// font-family: 'Lato', sans-serif;
