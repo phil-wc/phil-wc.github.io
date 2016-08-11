@@ -2,13 +2,11 @@
   @extend %primary-font-family
 
   .testimonial,
-  .testimonial-text,
-  .music
+  .testimonial-text
     background-color: $site-primary-color
 
   .testimonial,
   .sample,
-  .music,
   .recentpost,
   .recent-news
     width: 100%
@@ -35,6 +33,9 @@
     .profile-menu-image
       +transition(all, .2s, ease-in-out)
       opacity: 1
+      max-width: 100%
+      width: 100% // oops
+      height: auto
 
       &:hover
         cursor: pointer
@@ -70,9 +71,6 @@
         width: 100%
         color: #ffffff
 
-  .music
-    padding: ($default-padding * 2) 0
-
     h4,
     .description
       color: #fff
@@ -81,10 +79,8 @@
 
   .testimonial
     .testimonial-text
-      @extend %reset-margin-padding
-
       .unslider
-        padding: $default-padding
+        padding: $default-padding 0
         color: #ffffff
 
         h3,
@@ -93,7 +89,7 @@
           color: #ffffff
 
   .recent-news
-    background-image: url('/assets/img/home/blog-section.jpg')
+    background-image: url('/assets/img/home/news-bg.jpg')
 
     .section-title
       margin-bottom: $default-margin
