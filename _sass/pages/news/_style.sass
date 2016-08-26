@@ -1,11 +1,10 @@
-@import "variables"
-
 .news
   .post-preview
     a
       color: $blog-post-item-title-text-color
 
-      &:hover, &:focus
+      &:hover,
+      &:focus
         color: $blog-post-item-title-text-color-on-hover
         text-decoration: none
 
@@ -14,4 +13,5 @@
 
     .post-meta
       @extend %serif-font-family
+
       color: $blog-post-item-meta-text-color

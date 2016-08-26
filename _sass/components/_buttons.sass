@@ -2,6 +2,7 @@
 
 .btn
   @extend %secondary-font-family
+
   padding: ($button-padding-top-bottom + 5px) $button-padding-right-left
   font-size: $button-font-size
   font-weight: $button-font-weight
@@ -15,7 +16,8 @@
   padding: $button-lg-padding-top-bottom $button-lg-padding-right-left
 
 .btn-default
-  &:hover, &:focus
+  &:hover,
+  &:focus
     background-color: $site-brand-color
     border: 2px solid $site-brand-color
     color: white
@@ -35,7 +37,8 @@ a.button-solid
   text-decoration: none
 
 
-a.button-solid:hover, a.button-solid:focus
+a.button-solid:hover,
+a.button-solid:focus
   color: $button-on-hover
   border-color: $button-on-hover
   text-decoration: none
@@ -55,7 +58,8 @@ a.button-solid-black
   text-decoration: none
 
 
-a.button-solid-black:hover, a.button-solid-black:focus
+a.button-solid-black:hover,
+a.button-solid-black:focus
   color: darken($button-on-hover,50%)
   border-color: darken($button-on-hover,50%)
   text-decoration: none

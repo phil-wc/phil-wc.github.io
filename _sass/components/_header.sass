@@ -4,7 +4,10 @@
   background-color: $gray
   background-attachment: scroll
 
-  .site-heading, .post-heading, .page-heading
+  .site-heading,
+  .post-heading,
+  .page-heading
+    @extend %normal-font-weight
     padding-top: $header-padding-top
     padding-right: 0
     padding-bottom: $header-padding-bottom
@@ -12,16 +15,22 @@
     text-align: center
 
     img
-      width: 11%
+      width: 7.5%
       height: auto
+      padding-bottom: 30px
+
+      @media screen and (max-width: 480px)
+        width: 12%
 
     h1
+      @extend %normal-font-weight
       font-size: $header-name-font-size
       margin-top: 0
       color: #ffffff
 
     .subheading
-      @extend %primary-font-family
+      @extend %headings-font-family
+
       color: $header-text-color
       font-size: $subheading-font-size
       font-weight: $subheading-font-weight
@@ -39,6 +48,7 @@
 
     .meta
       @extend %serif-font-family
+
       font-size: $post-meta-font-size
       font-weight: $subheading-font-weight
       line-height: $post-meta-line-height
@@ -53,9 +63,11 @@
 
 .home-header
   @extend .intro-header
+
   background-image: url('/assets/img/home/header-bg.jpg')
   min-height: $header-home-min-height
 
 .post-header
   @extend .intro-header
+
   background-image: url('/assets/img/header/news-post-default.jpg')

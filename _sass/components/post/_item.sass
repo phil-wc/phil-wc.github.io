@@ -1,16 +1,22 @@
 .post-item
-  border-bottom: 1px solid #fff
+  // border-bottom: 1px solid #fff
   padding: ($default-padding/2) 0
   margin-bottom: 15px
 
-  h1,h2,h3,h4,h5,h6
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6
     margin-top: 0
     font-size: ($blog-post-item-title-font-size * 1.2)
 
   a
     color: invert($site-text-color)
 
-    &:hover, &:focus
+    &:hover,
+    &:focus
       text-decoration: none
       color: $gray
 
@@ -33,14 +39,16 @@
     *
       color: #fff
 
-    .date, .author
+    .date,
+    .author
       @extend %normal-font-weight
 
     > a
       text-decoration: none
       color: invert($site-text-color)
 
-      &:hover, &:focus
+      &:hover,
+      &:focus
         color: $blog-post-item-subtitle-text-color-on-hover
         text-decoration: underline
 

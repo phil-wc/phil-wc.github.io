@@ -1,10 +1,13 @@
 <div class="container">
-  <div class="section-title text-center">
-    <h1>NEWS</h1>
-    <hr class="small">
+  <div class="section-title">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+        <h1 class="normal-font-weight">NEWS</h1>
+        <hr class="small" style="margin-left:0">
+      </div>
+    </div>
   </div>
 <div class="recent-news-list">
-<!-- PUT SHIT HERE -->
 </div>
 
 <!-- Hidden template for rss parser -->
@@ -12,17 +15,22 @@
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
         <div class="post-item">
-          <h6><a class="post-title" href="__URLPATH__">__TITLE__</a></h6>
+          <h6 class="normal-font-weight"><a class="post-title" href="__URLPATH__">__TITLE__</a></h6>
           <p class="post-meta">
-            <span class="date">on __PUBLISHED__</span>
+            <span class="light-font-weight date">on __PUBLISHED__</span>
           </p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- more posts -->
-  <div class="older-post text-center">
-    <a class="btn btn-default" href="{{ site.baseurl }}/news">OLDER POSTS →</a>
+
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+      <!-- more posts -->
+      <div class="older-post">
+        <a class="btn btn-default" href="{{ site.baseurl }}/news">OLDER POSTS →</a>
+      </div>
+    </div>
   </div>
 </div>

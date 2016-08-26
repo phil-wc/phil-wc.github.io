@@ -52,12 +52,25 @@ Here's availble class for using to override colors.
   color: #00b3fe !important
 
 
+
 // Button class
 
 .button-solid
 
 .button-solid-black
 
+
+
+// font-weight override
+
+.light-font-weight
+  font-weight: 300 !important
+
+.normal-font-weight
+  font-weight: 400 !important
+
+.thai-font-override
+  font-family: 'Kanit', sans-serif
 
 
 (should be literally easy to understand)

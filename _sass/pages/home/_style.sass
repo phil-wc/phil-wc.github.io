@@ -1,17 +1,21 @@
-@import "variables"
-
 .home
   @extend %primary-font-family
 
-  .testimonial, .testimonial-text, .music
+  .testimonial,
+  .testimonial-text
     background-color: $site-primary-color
 
-  .testimonial, .sample, .music, .recentpost, .recent-news
+  .testimonial,
+  .sample,
+  .recentpost,
+  .recent-news
     width: 100%
     padding-top: $default-padding
     padding-bottom: $default-padding
 
-  .sample, .recent-news, .thebluehour
+  .sample,
+  .recent-news,
+  .thebluehour
     background: no-repeat center center
     background-size: cover
 
@@ -20,6 +24,7 @@
 
     .content
       @extend %reset-padding
+
       overflow: hidden
 
       .button-center-container
@@ -28,6 +33,9 @@
     .profile-menu-image
       +transition(all, .2s, ease-in-out)
       opacity: 1
+      max-width: 100%
+      width: 100% // oops
+      height: auto
 
       &:hover
         cursor: pointer
@@ -46,11 +54,12 @@
       .content
         width: 60%
 
-    #js-player-container-default, #js-player-container-mobile
+    #js-player-container-default,
+    #js-player-container-mobile
       @extend %margin-left-right-default
 
   .thebluehour
-    background-image: url('/assets/img/home/tbhbg.jpg')
+    background-color: #14202c
     padding-top: 150px
     padding-bottom: 150px
 
@@ -62,32 +71,31 @@
         width: 100%
         color: #ffffff
 
-  .music
-    padding: ($default-padding * 2) 0
-
-    h4, .description
+    h4,
+    .description
       color: #fff
       padding: $default-padding-em
 
 
   .testimonial
     .testimonial-text
-      @extend %reset-margin-padding
-
       .unslider
-        padding: $default-padding
+        padding: $default-padding 0
         color: #ffffff
 
-        h3,h4
-          @extend %lighten-font-weight
+        h3,
+        h4
+          @extend %normal-font-weight
           color: #ffffff
 
   .recent-news
-    background-image: url('/assets/img/home/blog-section.jpg')
+    background-image: url('/assets/img/home/news-bg.jpg')
+    text-align: left
 
     .section-title
       margin-bottom: $default-margin
       color: #ffffff
+
       h1
         color: #ffffff
 
