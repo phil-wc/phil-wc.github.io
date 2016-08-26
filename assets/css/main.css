@@ -1,22 +1,16 @@
-body, h1,
-h2,
-h3,
-h4,
-h5,
-h6, a.button-solid, a.button-solid-black, .intro-header .site-heading .subheading, .home-header .site-heading .subheading, .post-header .site-heading .subheading,
-.intro-header .post-heading .subheading,
-.home-header .post-heading .subheading,
-.post-header .post-heading .subheading,
-.intro-header .page-heading .subheading,
-.home-header .page-heading .subheading,
-.post-header .page-heading .subheading, footer, .home, .services .overview .msm-link {
+body, a.button-solid, a.button-solid-black, .home, .services .overview .msm-link {
   font-family: "Montserrat", sans-serif; }
 
 .post-content p,
 .post-content a,
 .post-content strong,
 .post-content span,
-.post-content blockquote, .about p,
+.post-content blockquote, .home p,
+.home span,
+.home strong,
+.home li,
+.home a,
+.about p,
 .about span,
 .about strong,
 .about li,
@@ -53,13 +47,45 @@ h6, a.button-solid, a.button-solid-black, .intro-header .site-heading .subheadin
 .intro-header .post-heading .meta, .home-header .post-heading .meta, .post-header .post-heading .meta, .news .post-preview .post-meta {
   font-family: "Lora", "Times New Roman", serif; }
 
-.home .testimonial .testimonial-text .unslider h3,
-.home .testimonial .testimonial-text .unslider h4 {
-  font-weight: lighter; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, .intro-header .site-heading .subheading, .home-header .site-heading .subheading, .post-header .site-heading .subheading,
+.intro-header .post-heading .subheading,
+.home-header .post-heading .subheading,
+.post-header .post-heading .subheading,
+.intro-header .page-heading .subheading,
+.home-header .page-heading .subheading,
+.post-header .page-heading .subheading, footer {
+  font-family: "Lato", sans-serif; }
 
 .post-item .post-meta .date,
-.post-item .post-meta .author {
-  font-weight: normal; }
+.post-item .post-meta .author, .intro-header .site-heading, .home-header .site-heading, .post-header .site-heading,
+.intro-header .post-heading,
+.home-header .post-heading,
+.post-header .post-heading,
+.intro-header .page-heading,
+.home-header .page-heading,
+.post-header .page-heading, .intro-header .site-heading h1, .home-header .site-heading h1, .post-header .site-heading h1,
+.intro-header .post-heading h1,
+.home-header .post-heading h1,
+.post-header .post-heading h1,
+.intro-header .page-heading h1,
+.home-header .page-heading h1,
+.post-header .page-heading h1, footer, .home .testimonial .testimonial-text .unslider h3,
+.home .testimonial .testimonial-text .unslider h4 {
+  font-weight: 400; }
+
+.light-font-weight {
+  font-weight: 300 !important; }
+
+.normal-font-weight {
+  font-weight: 400 !important; }
+
+.thai-font-override {
+  font-family: "Kanit", sans-serif; }
 
 .home .profile, .home .profile .content {
   padding: 0; }
@@ -87,6 +113,12 @@ footer .list-inline {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+
+.no-padding {
+  padding: 0 !important; }
+
+.no-margin {
+  margin: 0 !important; }
 
 body {
   font-size: 17px;
@@ -131,7 +163,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700; }
+  font-weight: 400; }
 
 body {
   color: #3384a0; }
@@ -197,7 +229,6 @@ li {
     cursor: not-allowed; }
 
 .post-item {
-  border-bottom: 1px solid #fff;
   padding: 15px 0;
   margin-bottom: 15px; }
   .post-item h1,
@@ -334,8 +365,18 @@ a.button-solid-black:focus {
     .intro-header .page-heading img,
     .home-header .page-heading img,
     .post-header .page-heading img {
-      width: 11%;
-      height: auto; }
+      width: 7.5%;
+      height: auto;
+      padding-bottom: 30px; }
+      @media screen and (max-width: 480px) {
+        .intro-header .site-heading img, .home-header .site-heading img, .post-header .site-heading img,
+        .intro-header .post-heading img,
+        .home-header .post-heading img,
+        .post-header .post-heading img,
+        .intro-header .page-heading img,
+        .home-header .page-heading img,
+        .post-header .page-heading img {
+          width: 12%; } }
     .intro-header .site-heading h1, .home-header .site-heading h1, .post-header .site-heading h1,
     .intro-header .post-heading h1,
     .home-header .post-heading h1,
@@ -612,7 +653,8 @@ footer {
   .home .testimonial .testimonial-text .unslider h4 {
     color: #ffffff; }
 .home .recent-news {
-  background-image: url("/assets/img/home/news-bg.jpg"); }
+  background-image: url("/assets/img/home/news-bg.jpg");
+  text-align: left; }
   .home .recent-news .section-title {
     margin-bottom: 30px;
     color: #ffffff; }
