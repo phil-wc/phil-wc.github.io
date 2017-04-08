@@ -1,22 +1,47 @@
 ---
 title: "Memories In Memory"
 layout: special
-description: "Newone!"
+description: "Memories In Memory"
 ---
 
+<!-- navbar? => http://gijsroge.github.io/priority-nav.js/# -->
+<!-- http://navnav.co/ -->
 
-<section class="title">
-<h1 style="text-align: center;">{{ page.title }}</h1>
-</section>
+<div class="fullpage memories-in-memory">
 
-<section class="track" id="songname1">Track 1</section>
-<section class="track" id="songname2">Track 2</section>
-<section class="track" id="songname3">Track 3</section>
-<section class="track" id="songname4">Track 4</section>
-<section class="track" id="songname5">Track 5</section>
-<section class="track" id="songname6">Track 6</section>
-<section class="track" id="songname7">Track 7</section>
-<section class="track" id="songname8">Track 8</section>
+  <header class="section title text-center" data-anchor="title">
+    <div class="content"><h1 class="text-center">{{ page.title }}</h1></div>
+  </header>
 
-<section class="ending">Ending</section>
+  <div class="section track text-center" data-anchor="songname1">
+    <div class="content">
+    <h2 class="text-center">Track 1</h2>
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/PLxer4HELmw" frameborder="0" allowfullscreen></iframe></div>
+  </div>
+  <div class="section track text-center" data-anchor="songname2">
+    <div class="content"><h2 class="text-center">Track 2</h2>
+    <!-- inline player is 700px width -->
+    <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2567989105/size=small/bgcol=333333/linkcol=0f91ff/track=1519840439/transparent=true/" seamless><a href="http://phil-wc.bandcamp.com/album/science-series-iii-landscape">Science Series III : Landscape by phil_wc</a></iframe></div>
+  </div>
+  <div class="section track text-center" data-anchor="songname3">
+    <div class="content"><h2 class="text-center">Track 3</h2></div>
+  </div>
+  <div class="section track text-center" data-anchor="songname4">
+    <div class="content"><h2 class="text-center">Track 4</h2></div>
+  </div>
+  <div class="section track text-center" data-anchor="songname5">
+    <div class="content"><h2 class="text-center">Track 5</h2></div>
+  </div>
+  <div class="section track text-center" data-anchor="songname6">
+    <div class="content"><h2 class="text-center">Track 6</h2></div>
+  </div>
+  <div class="section track text-center" data-anchor="songname7">
+    <div class="content"><h2 class="text-center">Track 7</h2></div>
+  </div>
+  <div class="section track text-center" data-anchor="songname8">
+    <div class="content"><h2 class="text-center">Track 8</h2></div>
+  </div>
 
+  <footer class="section ending text-center">Ending</footer>
+
+</div>
