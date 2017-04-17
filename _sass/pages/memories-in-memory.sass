@@ -3,3 +3,8 @@
     .content
       max-width: 1200px
       margin: 0 auto
+
+  // i'm lazy motherfucker
+  @for $i from 1 through 8
+    .section:nth-child(#{$i})
+      background-color: hsl(360 / 72 * $i, 100%, 60%)
