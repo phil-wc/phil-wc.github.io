@@ -1,2 +1,45 @@
 <!-- jQuery -->
 <script src="{{ "/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+<script>
+  var slideout = new Slideout({
+    'menu': document.getElementById('js-slideout-menu'),
+    'panel': document.getElementById('js-slideout-panel'),
+    'padding': 256,
+    'tolerance': 70,
+    'side': 'right'
+  });
+
+  var fixed = document.querySelector('.fixed-header');
+
+  slideout.on('translate', function(translated) {
+    fixed.style.transform = 'translateX(' + translated + 'px)';
+  });
+
+  slideout.on('beforeopen', function () {
+    fixed.style.transition = 'transform 300ms ease';
+    fixed.style.transform = 'translateX(-256px)';
+  });
+
+  slideout.on('beforeclose', function () {
+    fixed.style.transition = 'transform 300ms ease';
+    fixed.style.transform = 'translateX(0px)';
+  });
+
+  slideout.on('open', function () {
+    fixed.style.transition = '';
+  });
+
+  slideout.on('close', function () {
+    fixed.style.transition = '';
+  });
+
+  document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+    slideout.toggle();
+  });
+
+document.querySelector('.menu').addEventListener('click', function(event) {
+  if (event.target.nodeName === 'A') { slideout.close(); }
+});
+
+</script>
