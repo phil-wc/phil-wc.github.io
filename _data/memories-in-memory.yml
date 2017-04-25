@@ -55,3 +55,24 @@ songs:
     image: song-08.png
 
 credit:
+  thank_you: thank you
+  song_with_vocal: “The Sea Of Memory”
+  singer: Vocal & Lyrics by Bolinbee
+
+  bass: Bass by Aob Panuwat Sujitjorn
+
+  string: Strings
+  string_players:
+    - name: Roypim Thavornsuwan
+    - name: Namfon Varissara
+    - name: Nitivadee Kaosard
+
+  recording_engineer: Recording Engineer – Kijjaz
+
+  photographer: Photographer – Jaruwat Pulsup
+
+  typography: Typography – Le Lys
+
+  thanks_support: And everyone who supports me all along.
+
+  support: Support me
