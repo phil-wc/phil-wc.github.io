@@ -1,0 +1,57 @@
+# this is where you can change the link to the track
+# it's automatically change ALL places so you don't have to change many places...
+title:
+  album_name: memories in memory
+  artist: phil_wc
+  catch_phrase: “We are all made up by memories”
+  image: cover-small.jpg
+
+songs:
+  - name: All These Broken Pieces
+    anchor: all-these-broken-pieces
+    bandcamp_url: url_link_tag
+    image: song-01.png
+
+
+  - name: Disconnected
+    anchor: disconnected
+    bandcamp_url: url_link_tag
+    image: song-02.png
+
+
+  - name: Grains Of Thought
+    anchor: grains-of-thought
+    bandcamp_url: url_link_tag
+    image: song-03.png
+
+
+  - name: Floating Away From Reminiscence
+    anchor: floating-away-from-reminiscence
+    bandcamp_url: url_link_tag
+    image: song-04.png
+
+
+  - name: A Sea Of Emptiness
+    anchor: a-sea-of-emptiness
+    bandcamp_url: url_link_tag
+    image: song-05.png
+
+
+  - name: I'll Disappear From Everyone
+    anchor: i-ll-disappear-from-everyone
+    bandcamp_url: url_link_tag
+    image: song-06.png
+
+
+  - name: A New Memory
+    anchor: a-new-memory
+    bandcamp_url: url_link_tag
+    image: song-07.png
+
+
+  - name: The Sea Of Memory
+    anchor: the-sea-of-memory
+    bandcamp_url: url_link_tag
+    image: song-08.png
+
+credit:
