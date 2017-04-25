@@ -49,7 +49,20 @@ description: "Memories In Memory"
 
   <footer id="credits" class="section ending text-center">
     <div class="content">
-      <h2 class="text-center">Ending</h2>
+      <h1>{{memories-in-memory.credit.thank_you}}</h1>
+      <h4>{{memories-in-memory.credit.song_with_vocal}}</h4>
+      <h4>{{memories-in-memory.credit.singer}}</h4>
+      <h4>{{memories-in-memory.credit.bass}}</h4>
+      <h4>{{memories-in-memory.credit.string}}</h4>
+      {% for string_player in memories-in-memory.credit.string_players %}
+        <h4>{{string_player.name}}</h4>
+      {% endfor %}
+      <h4>{{memories-in-memory.credit.recording_engineer}}</h4>
+      <h4>{{memories-in-memory.credit.photographer}}</h4>
+      <h4>{{memories-in-memory.credit.typography}}</h4>
+      <h4>{{memories-in-memory.credit.thanks_support}}</h4>
+      <h4>{{memories-in-memory.credit.support}}</h4>
+      <!-- More four buttons -->
     </div>
   </footer>
 
