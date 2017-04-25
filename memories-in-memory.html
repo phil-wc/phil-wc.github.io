@@ -6,11 +6,13 @@ description: "Memories In Memory"
 
 {% assign memories-in-memory = site.data.memories-in-memory %}
 
-<nav id="js-slideout-menu" class="menu">
+<nav class="menu" id="js-slideout-menu">
   <ul class="menu-section-list">
     <li><a href="#title">Title</a></li>
     {% for song in memories-in-memory.songs %}
-      <li><a href="#{{song.anchor}}">{{song.name}}</a></li>
+
+    <li><a href="#{{song.anchor}}">{{song.name}}</a></li>
+
     {% endfor %}
     <li><a href="#credits">Thankyou</a></li>
   </ul>
@@ -20,34 +22,40 @@ description: "Memories In Memory"
   <div class="js-slideout-toggle">&#9776;</div>
 </div>
 
-<main id="js-slideout-panel" class="memories-in-memory">
+<main class="memories-in-memory" id="js-slideout-panel">
 
-  <header id="title" class="section text-center">
+  <header class="section title text-center" id="title">
     <div class="content">
       <img
         class="center-block img-responsive"
         src="/assets/img/mim/{{ memories-in-memory.title.image }}"
         alt="{{ memories-in-memory.title.album_name }}" />
       <h1 class="text-center">{{ memories-in-memory.title.album_name }}</h1>
+
       <p>{{ memories-in-memory.title.artist }}</p>
       <p>{{ memories-in-memory.title.catch_phrase }}</p>
+      <!-- More two buttons -->
     </div>
   </header>
 
 
   {% for song in memories-in-memory.songs %}
-  <div id="{{song.anchor}}" class="section track text-center">
+  <div class="section track text-center" id="{{song.anchor}}">
     <div class="content">
-      <img class="center-block img-responsive" src="/assets/img/mim/{{song.image}}" alt="{{song.name}}"/>
-      <h2 class="text-center">{{song.name}}</h2>
-      <!-- inline player is 700px width -->
-
-      <!-- <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2567989105/size=small/bgcol=333333/linkcol=0f91ff/track=1519840439/transparent=true/" seamless><a href="http://phil-wc.bandcamp.com/album/science-series-iii-landscape">Science Series III : Landscape by phil_wc</a></iframe> -->
+      <img
+        class="center-block img-responsive"
+        src="/assets/img/mim/{{song.image}}"
+        alt="{{song.name}}"/>
+      <div class="song-wrapper">
+        <h2 class="text-center">{{song.name}}</h2>
+        <!-- inline player is 700px width -->
+        <!-- <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2567989105/size=small/bgcol=333333/linkcol=0f91ff/track=1519840439/transparent=true/" seamless><a href="http://phil-wc.bandcamp.com/album/science-series-iii-landscape">Science Series III : Landscape by phil_wc</a></iframe> -->
+      </div>
     </div>
   </div>
   {% endfor %}
 
-  <footer id="credits" class="section ending text-center">
+  <footer class="section ending text-center" id="credits">
     <div class="content">
       <h1>{{memories-in-memory.credit.thank_you}}</h1>
       <h4>{{memories-in-memory.credit.song_with_vocal}}</h4>
@@ -65,5 +73,5 @@ description: "Memories In Memory"
       <!-- More four buttons -->
     </div>
   </footer>
-
+  <!-- Any dropdown button, use bootstrap -->
 </main>
