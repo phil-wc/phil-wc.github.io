@@ -30,11 +30,33 @@ description: "Memories In Memory"
         class="center-block img-responsive"
         src="/assets/img/mim/{{ memories-in-memory.title.image }}"
         alt="{{ memories-in-memory.title.album_name }}" />
-      <h1 class="text-center">{{ memories-in-memory.title.album_name }}</h1>
+      <h1 class="headings text-center">{{ memories-in-memory.title.album_name }}</h1>
 
-      <p>{{ memories-in-memory.title.artist }}</p>
-      <p>{{ memories-in-memory.title.catch_phrase }}</p>
+      <p class="font-lato">{{ memories-in-memory.title.artist }}</p>
+      <p class="font-lato text-italic text-weight-normal">{{ memories-in-memory.title.catch_phrase }}</p>
       <!-- More two buttons -->
+
+      <div class="buttons">
+        <div class="dropdown-button-wrapper">
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Main Site
+            </button>
+          </div>
+        </div>
+        <div class="dropdown-button-wrapper">
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              LISTEN&nbsp;&nbsp;<span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="https://play.spotify.com/album/4X7eZp92R3KSpi4fejyPUS">Spotify</a></li>
+              <li><a href="http://www.deezer.com/album/12475868">Deezer</a></li>
+              <li><a href="https://www.fungjai.com/artist/ChapavichTemnitikul">Fungjai</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </div>
   </header>
 
@@ -47,7 +69,7 @@ description: "Memories In Memory"
         src="/assets/img/mim/{{song.image}}"
         alt="{{song.name}}"/>
       <div class="song-wrapper">
-        <h2 class="text-center">{{song.name}}</h2>
+        <h2 class="song-name text-center">{{song.name}}</h2>
         <!-- inline player is 700px width -->
         <!-- <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2567989105/size=small/bgcol=333333/linkcol=0f91ff/track=1519840439/transparent=true/" seamless><a href="http://phil-wc.bandcamp.com/album/science-series-iii-landscape">Science Series III : Landscape by phil_wc</a></iframe> -->
       </div>
