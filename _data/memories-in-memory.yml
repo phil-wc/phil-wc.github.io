@@ -59,7 +59,8 @@ credit:
   song_with_vocal: “The Sea Of Memory”
   singer: Vocal & Lyrics by Bolinbee
 
-  bass: Bass by Aob Panuwat Sujitjorn
+  bass: Bass
+  bass_player_name: Aob Panuwat Sujitjorn
 
   string: Strings
   string_players:
@@ -67,11 +68,14 @@ credit:
     - name: Namfon Varissara
     - name: Nitivadee Kaosard
 
-  recording_engineer: Recording Engineer – Kijjaz
+  recording_engineer: Recording Engineer
+  recording_engineer_name: Kijjaz
 
-  photographer: Photographer – Jaruwat Pulsup
+  photographer: Photographer
+  photographer_name: Jaruwat Pulsup
 
-  typography: Typography – Le Lys
+  typography: Typography
+  typography_name: Le Lys
 
   thanks_support: And everyone who supports me all along.
 
