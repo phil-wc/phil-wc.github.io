@@ -53,7 +53,6 @@ description: "Memories In Memory"
           </div>
         </div>
       </div>
-
     </div>
   </header>
 
@@ -61,14 +60,18 @@ description: "Memories In Memory"
   {% for song in memories-in-memory.songs %}
   <div class="section track text-center" id="{{song.anchor}}">
     <div class="content">
-      <img
-        class="center-block img-responsive"
-        src="/assets/img/mim/{{song.image}}"
-        alt="{{song.name}}"/>
+      <div class="song-image-wrapper">
+        <img
+          class="center-block img-responsive"
+          src="/assets/img/mim/{{song.image}}"
+          alt="{{song.name}}"/>
+      </div>
       <div class="song-wrapper">
         <h2 class="song-name text-center">{{song.name}}</h2>
         <!-- inline player is 700px width -->
-        <!-- <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2567989105/size=small/bgcol=333333/linkcol=0f91ff/track=1519840439/transparent=true/" seamless><a href="http://phil-wc.bandcamp.com/album/science-series-iii-landscape">Science Series III : Landscape by phil_wc</a></iframe> -->
+        <div class="bandcamp-iframe-wrapper">
+          <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2567989105/size=small/bgcol=ffffff/linkcol=0687f5/track=1519840439/transparent=true/" seamless><a href="http://phil-wc.bandcamp.com/album/science-series-iii-landscape">Science Series III : Landscape by phil_wc</a></iframe>
+        </div>
       </div>
     </div>
   </div>
