@@ -42,8 +42,11 @@ nav.menu
 
 .memories-in-memory
   background: #cccccc
+  color: #3d3d3b
 
   .section
+    color: #3d3d3b
+
     display: flex
     justify-content: center
     align-items: center
@@ -76,27 +79,60 @@ nav.menu
       margin: 20px 0 15px 0
 
     .buttons
-      margin-bottom: 50px
+      max-width: 480px
+      display: flex
+      flex-flow: column wrap
+      align-items: center
 
-      // overriding bootstrap
-      .dropdown-button-wrapper
-        &:not(:last-child)
-          margin-bottom: 15px
+      @media screen and (min-width: 768px)
+        flex-flow: row wrap
+        justify-content: space-around
+      // make button wrap next row when it change heights
 
-        div.btn-group
-          width: 200px
+      .button-wrapper
+        width: 180px
+        padding: 5px 0
 
-        button.btn
+        // overriding bootstrap
+        .btn-group.open
+          transition: all .1s ease-in-out
+
+        // overriding bootstrap
+        .btn-group.open .dropdown-toggle
+          background: #edebde
+          border-color: #edebde
+          color: #3d3d3b
+
+        // overriding bootstrap
+        .btn-group
+          width: 100%
+
+          // overriding bootstrap
+          .dropdown-menu
+            border-radius: 0
+            background: #edebde
+            color: #3d3d3b
+            min-width: 180px
+
+            transition: all .1s ease-in-out
+
+        .btn
           width: 100%
           background: transparent
           border-color: #000000
 
           padding: 15px 0
 
+          transition: all .1s ease-in-out
+
           &:hover
-            background: #ffffff
-            border-color: #ffffff
-            color: #000000
+            background: #edebde
+            border-color: #edebde
+            color: #3d3d3b
+
+        .btn-default
+          &:focus
+            color: #3d3d3b
 
     &.title
       h1
@@ -117,7 +153,7 @@ nav.menu
           max-width: 420px
 
     &.ending
-      div:not(.content)
+      .credit-personal-wrapper
         margin: 30px 0
         line-height: 1
 
