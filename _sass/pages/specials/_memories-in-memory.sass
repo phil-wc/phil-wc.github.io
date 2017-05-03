@@ -44,6 +44,109 @@ nav.menu
   background: #cccccc
   color: #3d3d3b
 
+
+
+  p
+    line-height: 1.2
+    margin-top: 0
+    margin-bottom: 15px
+
+  img
+    height: auto
+
+
+
+  .headings,
+  .song-name
+    font-weight: 600
+    text-align: center
+
+  .headings
+    font-size: 30px
+    margin: 20px 0 15px 0
+
+  .song-name
+    font-size: 26px
+    margin: 30px 0 15px 0
+
+
+
+  .buttons
+    margin: 0 auto
+    margin-bottom: 30px
+    max-width: 480px
+    display: flex
+    flex-flow: column wrap
+    align-items: center
+
+    @media screen and (min-width: 768px)
+      flex-flow: row wrap
+      justify-content: space-around
+
+  .button-wrapper
+    width: 180px
+    padding: 5px 0
+
+  // overriding bootstrap button styling
+  .btn
+    width: 100%
+    background: transparent
+    border-color: #000000
+
+    padding: 15px 0
+
+    transition: all .1s ease-in-out
+
+    &:hover
+      background: #edebde
+      border-color: #edebde
+      color: #3d3d3b
+
+    &:focus
+      color: #3d3d3b
+
+  .btn-group
+    width: 100%
+
+    .dropdown-menu,
+    .dropdown-toggle
+      color: #3d3d3d
+
+    .dropdown-menu
+      border-radius: 0
+      background: #edebde
+      min-width: 180px
+
+    &.open
+      transition: all .1s ease-in-out
+
+      .dropdown-toggle
+        background: #edebde
+        border-color: #edebde
+        box-shadow: none
+
+  .song-wrapper
+    max-width: 420px
+    margin: 0 auto
+
+    @media screen and (min-width: 1200px)
+      max-width: none
+      flex: 1
+
+  .bandcamp-iframe-wrapper
+    z-index: 1
+    position: relative
+    margin-top: 50px
+
+  .song-image-wrapper
+    @media screen and (min-width: 1200px)
+      flex: 1
+
+  .credit-personal-wrapper
+    margin: 30px 0
+    line-height: 1
+
+
   .section
     color: #3d3d3b
 
@@ -52,7 +155,7 @@ nav.menu
     align-items: center
 
     padding-top: 50px
-    padding-top: 50px
+    padding-bottom: 25px
     min-height: 75vh
 
     background: url('/assets/img/mim/wall-bg.jpg') #b7bcc2 no-repeat
@@ -63,105 +166,15 @@ nav.menu
     @media screen and (min-width: 768px)
       min-height: 100vh
 
-    img
-      max-width: 280px
-      height: auto
 
-      @media screen and (min-width: 768px)
-        max-width: 360px
+    &.title,
+    &.track,
+    &.ending
+      text-align: center
 
-    .headings
-      font-size: 30px
-      font-weight: 600
-      margin: 20px 0 15px 0
-
-    .buttons
-      margin: 0 auto
-      margin-bottom: 30px
-      max-width: 480px
-      display: flex
-      flex-flow: column wrap
-      align-items: center
-
-      @media screen and (min-width: 768px)
-        flex-flow: row wrap
-        justify-content: space-around
-
-    .button-wrapper
-      width: 180px
-      padding: 5px 0
-
-      // overriding bootstrap
-      .btn-group.open
-        transition: all .1s ease-in-out
-
-      // overriding bootstrap
-      .btn-group.open .dropdown-toggle
-        background: #edebde
-        border-color: #edebde
-        color: #3d3d3b
-
-        box-shadow: none
-
-      // overriding bootstrap
-      .btn-group
-        width: 100%
-
-        // overriding bootstrap
-        .dropdown-menu
-          border-radius: 0
-          background: #edebde
-          color: #3d3d3b
-          min-width: 180px
-
-          transition: all .1s ease-in-out
-
-      .btn
-        width: 100%
-        background: transparent
-        border-color: #000000
-
-        padding: 15px 0
-
-        transition: all .1s ease-in-out
-
-        &:hover
-          background: #edebde
-          border-color: #edebde
-          color: #3d3d3b
-
-      .btn-default
-        &:focus
-          color: #3d3d3b
-
-    &.title
-      h1
-        font-size: 30px
-        font-weight: 600
-
-      p
-        line-height: 1.2
-        margin-top: 0
-        margin-bottom: 15px
-
-      img
-        max-width: 240px
-        height: auto
-
-        @media screen and (min-width: 768px)
-          font-size: initial
-          max-width: 420px
-
-    &.track
+    &.track,
+    &.ending
       .content
-        // song starts change directions to horizontally
-        // at min-width: 1200px
-        // change view on desktop size
-        // display: flex
-        // .song-wrapper has no max-width but divide itself equally
-        // -- so use flex 1 on both .song-wrapper and .song-image-wrapper
-        // align-items: center
-        // change order via flex flow reverse
         width: 90vw
         margin: 0 auto
 
@@ -169,56 +182,49 @@ nav.menu
           max-width: 1200px
           margin: 0 auto
 
+    &.title
+      img
+        max-width: 240px
+
+        @media screen and (min-width: 768px)
+          max-width: 420px
+
+    &.track
+      img
+        max-width: 280px
+
+        @media screen and (min-width: 768px)
+          max-width: 360px
+
+      .content
         @media screen and (min-width: 1200px)
           display: flex
 
-        .song-wrapper
-          max-width: 420px
-          margin: 0 auto
-
-          @media screen and (min-width: 1200px)
-            max-width: none
-            flex: 1
-
-          .bandcamp-iframe-wrapper
-            z-index: 1
-            position: relative
-
-        .song-image-wrapper
-          @media screen and (min-width: 1200px)
-            flex: 1
-
-    // bwoah
-    &.track
       &:nth-child(even)
-        .content
-          @media screen and (min-width: 1200px)
+        @media screen and (min-width: 1200px)
+          .content
             flex-direction: row-reverse
+
             .song-name
               text-align: right
+
             .bandcamp-iframe-wrapper
               .spinner
                 right: 0
                 left: initial
+
       &:nth-child(odd)
-        .content
-          @media screen and (min-width: 1200px)
+        @media screen and (min-width: 1200px)
+          .content
             .song-name
               text-align: left
+
             .bandcamp-iframe-wrapper
               .spinner
                 left: 0
                 right: initial
 
-    &.ending
-      .credit-personal-wrapper
-        margin: 30px 0
-        line-height: 1
 
-    .song-name
-      font-size: 26px
-      font-weight: 600
-      margin: 30px 0 15px 0
 
 // taken/modified from w3school
 .spinner
