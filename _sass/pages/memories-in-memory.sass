@@ -63,9 +63,6 @@ nav.menu
     @media screen and (min-width: 768px)
       min-height: 100vh
 
-    // @media screen and (min-width: 481px)
-    //   height: 100vh
-
     img
       max-width: 280px
       height: auto
@@ -89,54 +86,53 @@ nav.menu
       @media screen and (min-width: 768px)
         flex-flow: row wrap
         justify-content: space-around
-      // make button wrap next row when it change heights
 
-      .button-wrapper
-        width: 180px
-        padding: 5px 0
+    .button-wrapper
+      width: 180px
+      padding: 5px 0
+
+      // overriding bootstrap
+      .btn-group.open
+        transition: all .1s ease-in-out
+
+      // overriding bootstrap
+      .btn-group.open .dropdown-toggle
+        background: #edebde
+        border-color: #edebde
+        color: #3d3d3b
+
+        box-shadow: none
+
+      // overriding bootstrap
+      .btn-group
+        width: 100%
 
         // overriding bootstrap
-        .btn-group.open
+        .dropdown-menu
+          border-radius: 0
+          background: #edebde
+          color: #3d3d3b
+          min-width: 180px
+
           transition: all .1s ease-in-out
 
-        // overriding bootstrap
-        .btn-group.open .dropdown-toggle
+      .btn
+        width: 100%
+        background: transparent
+        border-color: #000000
+
+        padding: 15px 0
+
+        transition: all .1s ease-in-out
+
+        &:hover
           background: #edebde
           border-color: #edebde
           color: #3d3d3b
 
-          box-shadow: none
-
-        // overriding bootstrap
-        .btn-group
-          width: 100%
-
-          // overriding bootstrap
-          .dropdown-menu
-            border-radius: 0
-            background: #edebde
-            color: #3d3d3b
-            min-width: 180px
-
-            transition: all .1s ease-in-out
-
-        .btn
-          width: 100%
-          background: transparent
-          border-color: #000000
-
-          padding: 15px 0
-
-          transition: all .1s ease-in-out
-
-          &:hover
-            background: #edebde
-            border-color: #edebde
-            color: #3d3d3b
-
-        .btn-default
-          &:focus
-            color: #3d3d3b
+      .btn-default
+        &:focus
+          color: #3d3d3b
 
     &.title
       h1
