@@ -34,7 +34,6 @@ description: "Memories In Memory"
 
       <p class="font-lato">{{ memories-in-memory.title.artist }}</p>
       <p class="font-lato text-italic text-weight-normal">{{ memories-in-memory.title.catch_phrase }}</p>
-      <!-- More two buttons -->
 
       <div class="buttons">
         <div class="button-wrapper">
@@ -67,10 +66,10 @@ description: "Memories In Memory"
           alt="{{song.name}}"/>
       </div>
       <div class="song-wrapper">
-        <h2 class="song-name text-center">{{song.name}}</h2>
-        <!-- inline player is 700px width -->
+        <h2 class="song-name">{{song.name}}</h2>
         <div class="bandcamp-iframe-wrapper">
-          <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2567989105/size=small/bgcol=ffffff/linkcol=0687f5/track=1519840439/transparent=true/" seamless><a href="http://phil-wc.bandcamp.com/album/science-series-iii-landscape">Science Series III : Landscape by phil_wc</a></iframe>
+          <div class="spinner"></div>
+          <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2567989105/size=small/bgcol=ffffff/linkcol=0687f5/track=1519840439/transparent=true/" seamless></iframe>
         </div>
       </div>
     </div>
