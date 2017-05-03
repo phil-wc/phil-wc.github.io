@@ -738,13 +738,87 @@ nav.menu {
 .memories-in-memory {
   background: #cccccc;
   color: #3d3d3b; }
+  .memories-in-memory p {
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 15px; }
+  .memories-in-memory img {
+    height: auto; }
+  .memories-in-memory .headings,
+  .memories-in-memory .song-name {
+    font-weight: 600;
+    text-align: center; }
+  .memories-in-memory .headings {
+    font-size: 30px;
+    margin: 20px 0 15px 0; }
+  .memories-in-memory .song-name {
+    font-size: 26px;
+    margin: 30px 0 15px 0; }
+  .memories-in-memory .buttons {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 480px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center; }
+    @media screen and (min-width: 768px) {
+      .memories-in-memory .buttons {
+        flex-flow: row wrap;
+        justify-content: space-around; } }
+  .memories-in-memory .button-wrapper {
+    width: 180px;
+    padding: 5px 0; }
+  .memories-in-memory .btn {
+    width: 100%;
+    background: transparent;
+    border-color: #000000;
+    padding: 15px 0;
+    transition: all 0.1s ease-in-out; }
+    .memories-in-memory .btn:hover {
+      background: #edebde;
+      border-color: #edebde;
+      color: #3d3d3b; }
+    .memories-in-memory .btn:focus {
+      color: #3d3d3b; }
+  .memories-in-memory .btn-group {
+    width: 100%; }
+    .memories-in-memory .btn-group .dropdown-menu,
+    .memories-in-memory .btn-group .dropdown-toggle {
+      color: #3d3d3d; }
+    .memories-in-memory .btn-group .dropdown-menu {
+      border-radius: 0;
+      background: #edebde;
+      min-width: 180px; }
+    .memories-in-memory .btn-group.open {
+      transition: all 0.1s ease-in-out; }
+      .memories-in-memory .btn-group.open .dropdown-toggle {
+        background: #edebde;
+        border-color: #edebde;
+        box-shadow: none; }
+  .memories-in-memory .song-wrapper {
+    max-width: 420px;
+    margin: 0 auto; }
+    @media screen and (min-width: 1200px) {
+      .memories-in-memory .song-wrapper {
+        max-width: none;
+        flex: 1; } }
+  .memories-in-memory .bandcamp-iframe-wrapper {
+    z-index: 1;
+    position: relative;
+    margin-top: 50px; }
+  @media screen and (min-width: 1200px) {
+    .memories-in-memory .song-image-wrapper {
+      flex: 1; } }
+  .memories-in-memory .credit-personal-wrapper {
+    margin: 30px 0;
+    line-height: 1; }
   .memories-in-memory .section {
     color: #3d3d3b;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 50px;
-    padding-top: 50px;
+    padding-bottom: 25px;
     min-height: 75vh;
     background: url("/assets/img/mim/wall-bg.jpg") #b7bcc2 no-repeat;
     background-repeat: no-repeat;
@@ -753,94 +827,28 @@ nav.menu {
     @media screen and (min-width: 768px) {
       .memories-in-memory .section {
         min-height: 100vh; } }
-    .memories-in-memory .section img {
-      max-width: 280px;
-      height: auto; }
-      @media screen and (min-width: 768px) {
-        .memories-in-memory .section img {
-          max-width: 360px; } }
-    .memories-in-memory .section .headings {
-      font-size: 30px;
-      font-weight: 600;
-      margin: 20px 0 15px 0; }
-    .memories-in-memory .section .buttons {
-      margin: 0 auto;
-      margin-bottom: 30px;
-      max-width: 480px;
-      display: flex;
-      flex-flow: column wrap;
-      align-items: center; }
-      @media screen and (min-width: 768px) {
-        .memories-in-memory .section .buttons {
-          flex-flow: row wrap;
-          justify-content: space-around; } }
-    .memories-in-memory .section .button-wrapper {
-      width: 180px;
-      padding: 5px 0; }
-      .memories-in-memory .section .button-wrapper .btn-group.open {
-        transition: all 0.1s ease-in-out; }
-      .memories-in-memory .section .button-wrapper .btn-group.open .dropdown-toggle {
-        background: #edebde;
-        border-color: #edebde;
-        color: #3d3d3b;
-        box-shadow: none; }
-      .memories-in-memory .section .button-wrapper .btn-group {
-        width: 100%; }
-        .memories-in-memory .section .button-wrapper .btn-group .dropdown-menu {
-          border-radius: 0;
-          background: #edebde;
-          color: #3d3d3b;
-          min-width: 180px;
-          transition: all 0.1s ease-in-out; }
-      .memories-in-memory .section .button-wrapper .btn {
-        width: 100%;
-        background: transparent;
-        border-color: #000000;
-        padding: 15px 0;
-        transition: all 0.1s ease-in-out; }
-        .memories-in-memory .section .button-wrapper .btn:hover {
-          background: #edebde;
-          border-color: #edebde;
-          color: #3d3d3b; }
-      .memories-in-memory .section .button-wrapper .btn-default:focus {
-        color: #3d3d3b; }
-    .memories-in-memory .section.title h1 {
-      font-size: 30px;
-      font-weight: 600; }
-    .memories-in-memory .section.title p {
-      line-height: 1.2;
-      margin-top: 0;
-      margin-bottom: 15px; }
-    .memories-in-memory .section.title img {
-      max-width: 240px;
-      height: auto; }
-      @media screen and (min-width: 768px) {
-        .memories-in-memory .section.title img {
-          font-size: initial;
-          max-width: 420px; } }
-    .memories-in-memory .section.track .content {
+    .memories-in-memory .section.title, .memories-in-memory .section.track, .memories-in-memory .section.ending {
+      text-align: center; }
+    .memories-in-memory .section.track .content, .memories-in-memory .section.ending .content {
       width: 90vw;
       margin: 0 auto; }
       @media screen and (min-width: 768px) {
-        .memories-in-memory .section.track .content {
+        .memories-in-memory .section.track .content, .memories-in-memory .section.ending .content {
           max-width: 1200px;
           margin: 0 auto; } }
-      @media screen and (min-width: 1200px) {
-        .memories-in-memory .section.track .content {
-          display: flex; } }
-      .memories-in-memory .section.track .content .song-wrapper {
-        max-width: 420px;
-        margin: 0 auto; }
-        @media screen and (min-width: 1200px) {
-          .memories-in-memory .section.track .content .song-wrapper {
-            max-width: none;
-            flex: 1; } }
-        .memories-in-memory .section.track .content .song-wrapper .bandcamp-iframe-wrapper {
-          z-index: 1;
-          position: relative; }
-      @media screen and (min-width: 1200px) {
-        .memories-in-memory .section.track .content .song-image-wrapper {
-          flex: 1; } }
+    .memories-in-memory .section.title img {
+      max-width: 240px; }
+      @media screen and (min-width: 768px) {
+        .memories-in-memory .section.title img {
+          max-width: 420px; } }
+    .memories-in-memory .section.track img {
+      max-width: 280px; }
+      @media screen and (min-width: 768px) {
+        .memories-in-memory .section.track img {
+          max-width: 360px; } }
+    @media screen and (min-width: 1200px) {
+      .memories-in-memory .section.track .content {
+        display: flex; } }
     @media screen and (min-width: 1200px) {
       .memories-in-memory .section.track:nth-child(even) .content {
         flex-direction: row-reverse; }
@@ -855,13 +863,6 @@ nav.menu {
       .memories-in-memory .section.track:nth-child(odd) .content .bandcamp-iframe-wrapper .spinner {
         left: 0;
         right: initial; } }
-    .memories-in-memory .section.ending .credit-personal-wrapper {
-      margin: 30px 0;
-      line-height: 1; }
-    .memories-in-memory .section .song-name {
-      font-size: 26px;
-      font-weight: 600;
-      margin: 30px 0 15px 0; }
 
 .spinner {
   position: absolute;
