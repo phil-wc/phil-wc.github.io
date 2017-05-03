@@ -1,0 +1,19 @@
+{% for song in memories-in-memory.songs %}
+<div class="section track text-center" id="{{song.anchor}}">
+  <div class="content">
+    <div class="song-image-wrapper">
+      <img
+        class="center-block img-responsive"
+        src="/assets/img/mim/{{song.image}}"
+        alt="{{song.name}}"/>
+    </div>
+    <div class="song-wrapper">
+      <h2 class="song-name">{{song.name}}</h2>
+      <div class="bandcamp-iframe-wrapper">
+        <div class="spinner"></div>
+        <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2567989105/size=small/bgcol=ffffff/linkcol=0687f5/track=1519840439/transparent=true/" seamless></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}

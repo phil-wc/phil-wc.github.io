@@ -1,151 +1,18 @@
 ---
 title: "Memories In Memory"
-layout: special
+layout: memories_in_memory
 description: "Memories In Memory"
 ---
 
 {% assign memories-in-memory = site.data.memories-in-memory %}
 
-<nav class="menu" id="js-slideout-menu">
-  <ul class="menu-section-list">
-    <li><a href="#title">Title</a></li>
-    {% for song in memories-in-memory.songs %}
-
-    <li><a href="#{{song.anchor}}">{{song.name}}</a></li>
-
-    {% endfor %}
-    <li><a href="#credits">Thankyou</a></li>
-  </ul>
-</nav>
-
-<div class="fixed-header text-right">
-  <div class="js-slideout-toggle">&#9776;</div>
-</div>
+{% include special/memories_in_memory/partials/navigation.html %}
 
 <main class="memories-in-memory" id="js-slideout-panel">
 
-  <header class="section title text-center" id="title">
-    <div class="content">
-      <img
-        class="center-block img-responsive"
-        src="/assets/img/mim/{{ memories-in-memory.title.image }}"
-        alt="{{ memories-in-memory.title.album_name }}" />
-      <h1 class="headings text-center">{{ memories-in-memory.title.album_name }}</h1>
+  {% include special/memories_in_memory/partials/title.html %}
 
-      <p class="font-lato">{{ memories-in-memory.title.artist }}</p>
-      <p class="font-lato text-italic text-weight-normal">{{ memories-in-memory.title.catch_phrase }}</p>
+  {% include special/memories_in_memory/partials/tracks.html %}
 
-      <div class="buttons">
-        <div class="button-wrapper">
-          <a class="btn btn-default" href="{{site.url}}">Main Site</a>
-        </div>
-        <div class="button-wrapper">
-          <div class="btn-group">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              LISTEN&nbsp;&nbsp;<span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a href="https://play.spotify.com/album/4X7eZp92R3KSpi4fejyPUS">Spotify</a></li>
-              <li><a href="http://www.deezer.com/album/12475868">Deezer</a></li>
-              <li><a href="https://www.fungjai.com/artist/ChapavichTemnitikul">Fungjai</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-
-  {% for song in memories-in-memory.songs %}
-  <div class="section track text-center" id="{{song.anchor}}">
-    <div class="content">
-      <div class="song-image-wrapper">
-        <img
-          class="center-block img-responsive"
-          src="/assets/img/mim/{{song.image}}"
-          alt="{{song.name}}"/>
-      </div>
-      <div class="song-wrapper">
-        <h2 class="song-name">{{song.name}}</h2>
-        <div class="bandcamp-iframe-wrapper">
-          <div class="spinner"></div>
-          <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2567989105/size=small/bgcol=ffffff/linkcol=0687f5/track=1519840439/transparent=true/" seamless></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-  {% endfor %}
-
-  <footer class="section ending text-center" id="credits">
-    <div class="content">
-      <h1>{{memories-in-memory.credit.thank_you}}</h1>
-      <div class="credit-personal-wrapper">
-        <h4>{{memories-in-memory.credit.song_with_vocal}}</h4>
-        <small>{{memories-in-memory.credit.singer}}</small>
-      </div>
-      <div class="credit-personal-wrapper">
-        <h4>{{memories-in-memory.credit.bass}}</h4>
-        <small>{{memories-in-memory.credit.bass_player_name}}</small>
-      </div>
-      <div class="credit-personal-wrapper">
-        <h4>{{memories-in-memory.credit.string}}</h4>
-        {% for string_player in memories-in-memory.credit.string_players %}
-          <small>{{string_player.name}}</small><br/>
-        {% endfor %}
-      </div>
-      <div class="credit-personal-wrapper">
-        <h4>{{memories-in-memory.credit.recording_engineer}}</h4>
-        <small>{{memories-in-memory.credit.recording_engineer_name}}</small>
-      </div>
-      <div class="credit-personal-wrapper">
-        <h4>{{memories-in-memory.credit.photographer}}</h4>
-        <small>{{memories-in-memory.credit.photographer_name}}</small>
-      </div>
-      <div class="credit-personal-wrapper">
-        <h4>{{memories-in-memory.credit.typography}}</h4>
-        <small>{{memories-in-memory.credit.typography_name}}</small>
-      </div>
-      <div class="credit-personal-wrapper">
-        <h4>{{memories-in-memory.credit.thanks_support}}</h4>
-      </div>
-      <div class="credit-personal-wrapper">
-        <h4>{{memories-in-memory.credit.support}}</h4>
-      </div>
-      <!-- More four buttons -->
-      <div class="buttons">
-
-        <div class="button-wrapper">
-          <div class="btn-group">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              BUY&nbsp;&nbsp;<span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a href="https://play.spotify.com/album/4X7eZp92R3KSpi4fejyPUS">Spotify</a></li>
-              <li><a href="http://www.deezer.com/album/12475868">Deezer</a></li>
-              <li><a href="https://www.fungjai.com/artist/ChapavichTemnitikul">Fungjai</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="button-wrapper">
-          <div class="btn-group">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              LISTEN&nbsp;&nbsp;<span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a href="https://play.spotify.com/album/4X7eZp92R3KSpi4fejyPUS">Spotify</a></li>
-              <li><a href="http://www.deezer.com/album/12475868">Deezer</a></li>
-              <li><a href="https://www.fungjai.com/artist/ChapavichTemnitikul">Fungjai</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="button-wrapper">
-          <a class="btn btn-default" href="{{site.url}}">Main Site</a>
-        </div>
-        <div class="button-wrapper">
-          <a class="btn btn-default" href="#title">Back to top</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- Any dropdown button, use bootstrap -->
+  {% include special/memories_in_memory/partials/credits.html %}
 </main>
