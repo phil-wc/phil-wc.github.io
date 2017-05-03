@@ -165,6 +165,9 @@ h5,
 h6 {
   font-weight: 400; }
 
+.font-lato {
+  font-family: "Lato", sans-serif; }
+
 body {
   color: #3384a0; }
 
@@ -190,6 +193,21 @@ li {
 
 .page-not-found-hyperlink {
   color: #00b3fe; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-italic {
+  font-style: italic; }
+
+.text-weight-normal {
+  font-weight: 300; }
 
 .pager {
   margin: 20px 0 0; }
@@ -681,6 +699,193 @@ footer {
 .services .equipment-instrument {
   color: #000; }
 
+.memories-in-memory,
+.js-slideout-toggle {
+  color: #3d3d3b; }
+
+nav.menu {
+  background: #1d1f20; }
+  nav.menu ul {
+    padding-left: 0; }
+  nav.menu li, nav.menu a {
+    line-height: 1;
+    display: block;
+    color: white; }
+  nav.menu li {
+    list-style-type: none;
+    text-align: left;
+    color: #1b1b1b;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    margin-left: 25px;
+    margin-right: 20px; }
+    nav.menu li:active {
+      border-color: white; }
+  nav.menu a {
+    padding: 15px 0 15px 0;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 14px;
+    color: #e6e6e6; }
+    nav.menu a:active {
+      color: white;
+      font-weight: 400; }
+
+.js-slideout-toggle {
+  font-size: 1.5em;
+  padding-right: 15px; }
+
+.memories-in-memory {
+  background: #cccccc;
+  color: #3d3d3b; }
+  .memories-in-memory .section {
+    color: #3d3d3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-top: 50px;
+    min-height: 75vh;
+    background: url("/assets/img/mim/wall-bg.jpg") #b7bcc2 no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0; }
+    @media screen and (min-width: 768px) {
+      .memories-in-memory .section {
+        min-height: 100vh; } }
+    .memories-in-memory .section img {
+      max-width: 280px;
+      height: auto; }
+      @media screen and (min-width: 768px) {
+        .memories-in-memory .section img {
+          max-width: 360px; } }
+    .memories-in-memory .section .headings {
+      font-size: 30px;
+      font-weight: 600;
+      margin: 20px 0 15px 0; }
+    .memories-in-memory .section .buttons {
+      margin: 0 auto;
+      margin-bottom: 30px;
+      max-width: 480px;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center; }
+      @media screen and (min-width: 768px) {
+        .memories-in-memory .section .buttons {
+          flex-flow: row wrap;
+          justify-content: space-around; } }
+    .memories-in-memory .section .button-wrapper {
+      width: 180px;
+      padding: 5px 0; }
+      .memories-in-memory .section .button-wrapper .btn-group.open {
+        transition: all 0.1s ease-in-out; }
+      .memories-in-memory .section .button-wrapper .btn-group.open .dropdown-toggle {
+        background: #edebde;
+        border-color: #edebde;
+        color: #3d3d3b;
+        box-shadow: none; }
+      .memories-in-memory .section .button-wrapper .btn-group {
+        width: 100%; }
+        .memories-in-memory .section .button-wrapper .btn-group .dropdown-menu {
+          border-radius: 0;
+          background: #edebde;
+          color: #3d3d3b;
+          min-width: 180px;
+          transition: all 0.1s ease-in-out; }
+      .memories-in-memory .section .button-wrapper .btn {
+        width: 100%;
+        background: transparent;
+        border-color: #000000;
+        padding: 15px 0;
+        transition: all 0.1s ease-in-out; }
+        .memories-in-memory .section .button-wrapper .btn:hover {
+          background: #edebde;
+          border-color: #edebde;
+          color: #3d3d3b; }
+      .memories-in-memory .section .button-wrapper .btn-default:focus {
+        color: #3d3d3b; }
+    .memories-in-memory .section.title h1 {
+      font-size: 30px;
+      font-weight: 600; }
+    .memories-in-memory .section.title p {
+      line-height: 1.2;
+      margin-top: 0;
+      margin-bottom: 15px; }
+    .memories-in-memory .section.title img {
+      max-width: 240px;
+      height: auto; }
+      @media screen and (min-width: 768px) {
+        .memories-in-memory .section.title img {
+          font-size: initial;
+          max-width: 420px; } }
+    .memories-in-memory .section.track .content {
+      width: 90vw;
+      margin: 0 auto; }
+      @media screen and (min-width: 768px) {
+        .memories-in-memory .section.track .content {
+          max-width: 1200px;
+          margin: 0 auto; } }
+      @media screen and (min-width: 1200px) {
+        .memories-in-memory .section.track .content {
+          display: flex; } }
+      .memories-in-memory .section.track .content .song-wrapper {
+        max-width: 420px;
+        margin: 0 auto; }
+        @media screen and (min-width: 1200px) {
+          .memories-in-memory .section.track .content .song-wrapper {
+            max-width: none;
+            flex: 1; } }
+        .memories-in-memory .section.track .content .song-wrapper .bandcamp-iframe-wrapper {
+          z-index: 1;
+          position: relative; }
+      @media screen and (min-width: 1200px) {
+        .memories-in-memory .section.track .content .song-image-wrapper {
+          flex: 1; } }
+    @media screen and (min-width: 1200px) {
+      .memories-in-memory .section.track:nth-child(even) .content {
+        flex-direction: row-reverse; }
+        .memories-in-memory .section.track:nth-child(even) .content .song-name {
+          text-align: right; }
+        .memories-in-memory .section.track:nth-child(even) .content .bandcamp-iframe-wrapper .spinner {
+          right: 0;
+          left: initial; } }
+    @media screen and (min-width: 1200px) {
+      .memories-in-memory .section.track:nth-child(odd) .content .song-name {
+        text-align: left; }
+      .memories-in-memory .section.track:nth-child(odd) .content .bandcamp-iframe-wrapper .spinner {
+        left: 0;
+        right: initial; } }
+    .memories-in-memory .section.ending .credit-personal-wrapper {
+      margin: 30px 0;
+      line-height: 1; }
+    .memories-in-memory .section .song-name {
+      font-size: 26px;
+      font-weight: 600;
+      margin: 30px 0 15px 0; }
+
+.spinner {
+  position: absolute;
+  left: calc(50% - 17.5px);
+  transform: translate(-50%, -50%);
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #3498db;
+  width: 35px;
+  height: 35px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  z-index: -1; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 .heading-color {
   color: #ffffff !important; }
 
