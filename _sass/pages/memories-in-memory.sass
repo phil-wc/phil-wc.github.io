@@ -154,14 +154,44 @@ nav.menu
 
     &.track
       .content
+        // song starts change directions to horizontally
+        // at min-width: 1200px
         // change view on desktop size
         // display: flex
+        // .song-wrapper has no max-width but divide itself equally
+        // -- so use flex 1 on both .song-wrapper and .song-image-wrapper
+        // align-items: center
+        // change order via flex flow reverse
+        width: 90vw
+        margin: 0 auto
+
+        @media screen and (min-width: 768px)
+          max-width: 1200px
+          margin: 0 auto
+
+        @media screen and (min-width: 1200px)
+          display: flex
+
         .song-wrapper
           max-width: 420px
           margin: 0 auto
 
+          @media screen and (min-width: 1200px)
+            max-width: none
+            flex: 1
+
           .bandcamp-iframe-wrapper
             position: relative
+
+        .song-image-wrapper
+          @media screen and (min-width: 1200px)
+            flex: 1
+
+    // bwoah
+    &.track:nth-child(even)
+      .content
+        @media screen and (min-width: 1200px)
+          flex-direction: row-reverse
 
     &.ending
       .credit-personal-wrapper
@@ -172,15 +202,3 @@ nav.menu
       font-size: 26px
       font-weight: 600
       margin: 30px 0
-
-    .content
-      width: 90vw
-      margin: 0 auto
-
-      @media screen and (min-width: 768px)
-        max-width: 1200px
-        margin: 0 auto
-
-      // mobile, max outside gutter 15px
-      // approx using vw is 90vw content
-
