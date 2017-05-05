@@ -699,10 +699,29 @@ footer {
 .services .equipment-instrument {
   color: #000; }
 
-.memories-in-memory,
-.js-slideout-toggle {
-  color: #3d3d3b; }
+.spinner {
+  position: absolute;
+  left: calc(50% - 17.5px);
+  transform: translate(-50%, -50%);
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #3498db;
+  width: 35px;
+  height: 35px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  z-index: -1; }
 
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 nav.menu {
   background: #1d1f20; }
   nav.menu ul {
@@ -710,7 +729,8 @@ nav.menu {
   nav.menu li, nav.menu a {
     line-height: 1;
     display: block;
-    color: white; }
+    color: white;
+    transition: all 0.1s ease-in-out; }
   nav.menu li {
     list-style-type: none;
     text-align: left;
@@ -719,7 +739,7 @@ nav.menu {
     border-width: 0 0 1px 0;
     margin-left: 25px;
     margin-right: 20px; }
-    nav.menu li:active {
+    nav.menu li:hover, nav.menu li:active {
       border-color: white; }
   nav.menu a {
     padding: 15px 0 15px 0;
@@ -727,11 +747,12 @@ nav.menu {
     font-weight: 100;
     font-size: 14px;
     color: #e6e6e6; }
-    nav.menu a:active {
+    nav.menu a:hover, nav.menu a:active {
       color: white;
       font-weight: 400; }
 
 .js-slideout-toggle {
+  color: #3d3d3b;
   font-size: 1.5em;
   padding-right: 15px; }
   @media screen and (min-width: 768px) {
@@ -749,7 +770,8 @@ nav.menu {
   .memories-in-memory p {
     line-height: 1.2;
     margin-top: 0;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    color: #3d3d3b; }
   .memories-in-memory img {
     height: auto; }
   .memories-in-memory .headings,
@@ -824,6 +846,56 @@ nav.menu {
       background: #edebde;
       border-color: #edebde;
       box-shadow: none; }
+  .memories-in-memory .headings,
+  .memories-in-memory .song-name {
+    font-weight: 600; }
+  .memories-in-memory .headings {
+    font-size: 30px;
+    margin: 20px 0 15px 0; }
+  .memories-in-memory .song-name {
+    font-size: 26px;
+    margin: 30px 0 15px 0; }
+  .memories-in-memory .buttons {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 480px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center; }
+    @media screen and (min-width: 768px) {
+      .memories-in-memory .buttons {
+        flex-flow: row wrap;
+        justify-content: space-around; } }
+  .memories-in-memory .button-wrapper {
+    width: 180px;
+    padding: 5px 0; }
+  .memories-in-memory .btn {
+    width: 100%;
+    background: transparent;
+    border-color: #000000;
+    padding: 15px 0;
+    transition: all 0.1s ease-in-out; }
+    .memories-in-memory .btn:hover {
+      background: #edebde;
+      border-color: #edebde;
+      color: #3d3d3b; }
+  .memories-in-memory .btn-default:focus {
+    color: #3d3d3b; }
+  .memories-in-memory .btn-group {
+    width: 100%; }
+    .memories-in-memory .btn-group .dropdown-menu,
+    .memories-in-memory .btn-group .dropdown-toggle {
+      color: #3d3d3d; }
+    .memories-in-memory .btn-group .dropdown-menu {
+      border-radius: 0;
+      background: #edebde;
+      min-width: 180px; }
+    .memories-in-memory .btn-group.open {
+      transition: all 0.1s ease-in-out; }
+      .memories-in-memory .btn-group.open .dropdown-toggle {
+        background: #edebde;
+        border-color: #edebde;
+        box-shadow: none; }
   .memories-in-memory .section {
     color: #3d3d3b;
     display: flex;
@@ -880,29 +952,6 @@ nav.menu {
         left: 0;
         right: initial; } }
 
-.spinner {
-  position: absolute;
-  left: calc(50% - 17.5px);
-  transform: translate(-50%, -50%);
-  border: 4px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 4px solid #3498db;
-  width: 35px;
-  height: 35px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-  z-index: -1; }
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(360deg); } }
-@keyframes spin {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
 .heading-color {
   color: #ffffff !important; }
 
