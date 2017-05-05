@@ -1,0 +1,108 @@
+i
+  color: #3d3d3b
+  transition: all .1s ease-in-out
+
+  &:hover
+    color: #edebde
+
+p
+  line-height: 1.2
+  margin-top: 0
+  margin-bottom: 15px
+  color: #3d3d3b
+
+img
+  height: auto
+
+.headings,
+.song-name
+  font-weight: 600
+  text-align: center
+
+.headings
+  font-size: 30px
+  margin: 20px 0 15px 0
+
+.song-name
+  font-size: 26px
+  margin: 30px 0 15px 0
+
+  @media screen and (min-width: 1200px)
+    margin: 15px 0
+
+.song-wrapper
+  max-width: 420px
+  margin: 0 auto
+
+  @media screen and (min-width: 1200px)
+    max-width: none
+    flex: 1
+
+.bandcamp-iframe-wrapper
+  z-index: 1
+  position: relative
+  margin-top: 25px
+
+.song-image-wrapper
+  @media screen and (min-width: 1200px)
+    flex: 1
+
+.credit-personal-wrapper
+  margin: 30px 0
+  line-height: 1
+
+.buttons
+  margin: 0 auto
+  margin-bottom: 30px
+  max-width: 480px
+  display: flex
+  flex-flow: column wrap
+  align-items: center
+
+  @media screen and (min-width: 768px)
+    flex-flow: row wrap
+    justify-content: space-around
+
+.button-wrapper
+  width: 180px
+  padding: 5px 0
+
+// overriding bootstrap button styling
+.btn,
+.btn-group
+  width: 100%
+  border-color: #3d3d3b
+
+.btn
+  background: transparent
+  border-color: #3d3d3b
+
+  padding: 15px 0
+
+  transition: all .1s ease-in-out
+
+  &:hover
+    background: #edebde
+    border-color: #edebde
+    color: #3d3d3b
+
+  &:focus
+    color: #3d3d3b
+
+.btn-group
+  .dropdown-menu,
+  .dropdown-toggle
+    color: #3d3d3d
+
+  .dropdown-menu
+    border-radius: 0
+    background: #edebde
+    min-width: 180px
+
+  &.open
+    transition: all .1s ease-in-out
+
+    .dropdown-toggle
+      background: #edebde
+      border-color: #edebde
+      box-shadow: none
