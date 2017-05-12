@@ -39,11 +39,11 @@
           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             BUY&thinsp;&thinsp;<i class="fa fa-angle-down" aria-hidden="true"></i>
           </button>
-          <ul class="dropdown-menu">
-            <li><a href="https://play.spotify.com/album/4X7eZp92R3KSpi4fejyPUS">Spotify</a></li>
-            <li><a href="http://www.deezer.com/album/12475868">Deezer</a></li>
-            <li><a href="https://www.fungjai.com/artist/ChapavichTemnitikul">Fungjai</a></li>
-          </ul>
+            <ul class="dropdown-menu">
+              {% for store in memories-in-memory.credit.link_to.buy %}
+                <li><a href="{{store.digital_store_url}}">{{store.digital_store_name}}</a></li>
+              {% endfor %}
+            </ul>
         </div>
       </div>
       <div class="button-wrapper">
@@ -52,9 +52,9 @@
             LISTEN&thinsp;&thinsp;<i class="fa fa-angle-down" aria-hidden="true"></i>
           </button>
           <ul class="dropdown-menu">
-            <li><a href="https://play.spotify.com/album/4X7eZp92R3KSpi4fejyPUS">Spotify</a></li>
-            <li><a href="http://www.deezer.com/album/12475868">Deezer</a></li>
-            <li><a href="https://www.fungjai.com/artist/ChapavichTemnitikul">Fungjai</a></li>
+            {% for streaming_service in memories-in-memory.credit.link_to.listen %}
+              <li><a href="{{streaming_service.streaming_url}}">{{streaming_service.streaming_name}}</a></li>
+            {% endfor %}
           </ul>
         </div>
       </div>
