@@ -79,4 +79,28 @@ credit:
 
   thanks_support: And everyone who supports me all along.
 
+  link_to:
+    buy:
+      - digital_store_name: iTunes
+        digital_store_url:
+
+      - digital_store_name: Google Play
+        digital_store_url:
+
+      - digital_store_name: Amazon MP3
+        digital_store_url:
+
+      - digital_store_name: Bandcamp
+        digital_store_url:
+
+    listen:
+      - streaming_name: Spotify
+        streaming_url:
+
+      - streaming_name: Deezer
+        streaming_url:
+
+      - streaming_name: Fungjai
+        streaming_url:
+
   support: "Support me:"
