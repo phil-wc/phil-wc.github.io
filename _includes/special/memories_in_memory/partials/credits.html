@@ -1,0 +1,85 @@
+<footer class="section ending" id="credits">
+  <div class="content">
+    <h1>{{memories-in-memory.credit.thank_you}}</h1>
+    <div class="credit-personal-wrapper">
+      <h4>{{memories-in-memory.credit.song_with_vocal}}</h4>
+      <small>{{memories-in-memory.credit.singer}}</small>
+    </div>
+    <div class="credit-personal-wrapper">
+      <h4>{{memories-in-memory.credit.bass}}</h4>
+      <small>{{memories-in-memory.credit.bass_player_name}}</small>
+    </div>
+    <div class="credit-personal-wrapper">
+      <h4>{{memories-in-memory.credit.string}}</h4>
+      {% for string_player in memories-in-memory.credit.string_players %}
+        <small>{{string_player.name}}</small><br/>
+      {% endfor %}
+    </div>
+    <div class="credit-personal-wrapper">
+      <h4>{{memories-in-memory.credit.recording_engineer}}</h4>
+      <small>{{memories-in-memory.credit.recording_engineer_name}}</small>
+    </div>
+    <div class="credit-personal-wrapper">
+      <h4>{{memories-in-memory.credit.photographer}}</h4>
+      <small>{{memories-in-memory.credit.photographer_name}}</small>
+    </div>
+    <div class="credit-personal-wrapper">
+      <h4>{{memories-in-memory.credit.typography}}</h4>
+      <small>{{memories-in-memory.credit.typography_name}}</small>
+    </div>
+    <div class="credit-personal-wrapper">
+      <h4>{{memories-in-memory.credit.thanks_support}}</h4>
+    </div>
+    <div class="credit-personal-wrapper">
+      <h4>{{memories-in-memory.credit.support}}</h4>
+    </div>
+    <div class="buttons">
+      <div class="button-wrapper">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            BUY&thinsp;&thinsp;<i class="fa fa-angle-down" aria-hidden="true"></i>
+          </button>
+            <ul class="dropdown-menu">
+              {% for store in memories-in-memory.credit.link_to.buy %}
+                <li><a href="{{store.digital_store_url}}">{{store.digital_store_name}}</a></li>
+              {% endfor %}
+            </ul>
+        </div>
+      </div>
+      <div class="button-wrapper">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            LISTEN&thinsp;&thinsp;<i class="fa fa-angle-down" aria-hidden="true"></i>
+          </button>
+          <ul class="dropdown-menu">
+            {% for streaming_service in memories-in-memory.credit.link_to.listen %}
+              <li><a href="{{streaming_service.streaming_url}}">{{streaming_service.streaming_name}}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="button-wrapper">
+        <a class="btn btn-default" href="{{site.url}}">Main Site</a>
+      </div>
+      <div class="button-wrapper">
+        <a data-scroll class="btn btn-default" href="#title">Back to top&thinsp;&thinsp;<i class="fa fa-angle-up" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div>
+      <ul class="social list-inline text-center">
+        <li>
+          <a href="https://www.facebook.com/philwcfans" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+        </li>
+        <li>
+          <a href="http://www.youtube.com/user/chapavich" target="_blank"><i class="fa fa-youtube-square fa-2x"></i></a>
+        </li>
+        <li>
+          <a href="https://play.spotify.com/artist/582PntVSPKSr6a0afFs2ME" target="_blank"><i class="fa fa-spotify fa-2x"></i></a>
+        </li>
+        <li>
+          <a href="https://itunes.apple.com/th/artist/chapavich-temnitikul/id892813284" target="_blank"><i class="fa fa-apple fa-2x"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>

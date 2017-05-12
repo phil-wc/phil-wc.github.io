@@ -1,0 +1,15 @@
+<nav class="menu" id="js-slideout-menu">
+  <ul class="menu-section-list">
+    <li><a data-scroll href="#title">Title</a></li>
+    {% for song in memories-in-memory.songs %}
+
+    <li><a data-scroll href="#{{song.anchor}}">{{song.name}}</a></li>
+
+    {% endfor %}
+    <li><a data-scroll href="#credits">Thank You</a></li>
+  </ul>
+</nav>
+
+<div class="fixed-header text-right">
+  <div class="js-slideout-toggle">&#9776;</div>
+</div>
