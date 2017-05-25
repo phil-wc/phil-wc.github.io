@@ -9,56 +9,56 @@ title:
 
 # on each album. bandcamp has album id corresponded to song id
 
-bandcamp_album_id: 2433689420
+bandcamp_album_id: 503889942
 
 # put each song id here
 
 songs:
   - name: All These Broken Pieces
     anchor: all-these-broken-pieces
-    bandcamp_song_id: 4094316104
+    bandcamp_song_id: 3090671948
     image: song-01.png
 
 
   - name: Disconnected
     anchor: disconnected
-    bandcamp_song_id: 4094316104
+    bandcamp_song_id: 1735030403
     image: song-02.png
 
 
   - name: Grains Of Thought
     anchor: grains-of-thought
-    bandcamp_song_id: 4094316104
+    bandcamp_song_id: 1103140538
     image: song-03.png
 
 
   - name: Floating Away From Reminiscence
     anchor: floating-away-from-reminiscence
-    bandcamp_song_id: 4094316104
+    bandcamp_song_id: 3319763486
     image: song-04.png
 
 
   - name: A Sea Of Emptiness
     anchor: a-sea-of-emptiness
-    bandcamp_song_id: 4094316104
+    bandcamp_song_id: 2494562320
     image: song-05.png
 
 
   - name: I'll Disappear From Everyone
     anchor: i-ll-disappear-from-everyone
-    bandcamp_song_id: 4094316104
+    bandcamp_song_id: 2551381022
     image: song-06.png
 
 
   - name: A New Memory
     anchor: a-new-memory
-    bandcamp_song_id: 4094316104
+    bandcamp_song_id: 3112184633
     image: song-07.png
 
 
-  - name: The Sea Of Memory
+  - name: The Sea Of Memory (feat. BolinBee)
     anchor: the-sea-of-memory
-    bandcamp_song_id: 4094316104
+    bandcamp_song_id: 527830528
     image: song-08.png
 
 
@@ -99,7 +99,7 @@ credit:
         digital_store_url:
 
       - digital_store_name: Bandcamp
-        digital_store_url:
+        digital_store_url: https://phil-wc.bandcamp.com/album/memories-in-memory
 
     listen:
       - streaming_name: Spotify
