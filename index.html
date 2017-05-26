@@ -5,13 +5,9 @@ header-img: assets/img/home/header2-bg.jpg
 ---
 
 <div class="home">
-
-  <section class="thebluehour">
-    {% include home/thebluehour.html %}
-  </section>
-
-  <section class="player-widget">
-    {% include widgets/player.html %}
+  {% assign memories-in-memory = site.data.memories-in-memory %}
+  <section class="memories-in-memory-promo">
+    {% include home/memories-in-memory.html %}
   </section>
 
   <section class="testimonial">
