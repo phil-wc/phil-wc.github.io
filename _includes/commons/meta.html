@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ site.description }}">
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ site.url }}/{{ page.url }}" />
+<meta property="og:image" content="{{ "/assets/img/ico/favicon.ico" | prepend: site.url }}" />
+{% if page.kind == "post" %}
+<meta property="og:site_name" content="{{ site.title }} - {{ site.description }}"/>
+<meta property="og:title" content="{{ page.title }}" />
+{% elsif page.kind == "page" %}
+<meta property="og:site_name" content="{{ site.title }} - {{ site.description }}"/>
+<meta property="og:title" content="{{ page.title }} - {{ site.title }}" />
+{% endif %}
+
+<meta name="Chapavich Temnitikul" content="{{ site.title }}" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="{{ "/assets/img/icon/mstile-144x144.png" | prepend: site.url }}" />
+<meta name="msapplication-square70x70logo" content="{{ "/assets/img/icon/mstile-70x70.png" | prepend: site.url }}" />
+<meta name="msapplication-square150x150logo" content="{{ "/assets/img/icon/mstile-150x150.png" | prepend: site.url }}" />
+<meta name="msapplication-wide310x150logo" content="{{ "/assets/img/icon/mstile-310x150.png" | prepend: site.url }}" />
+<meta name="msapplication-square310x310logo" content="{{ "/assets/img/icon/mstile-310x310.png" | prepend: site.url }}" />

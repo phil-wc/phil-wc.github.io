@@ -1,0 +1,18 @@
+---
+title: "Memories In Memory"
+layout: memories_in_memory
+description: "Memories In Memory"
+---
+
+{% assign memories-in-memory = site.data.memories-in-memory %}
+
+{% include special/memories_in_memory/partials/navigation.html %}
+
+<main class="memories-in-memory" id="js-slideout-panel">
+
+  {% include special/memories_in_memory/partials/title.html %}
+
+  {% include special/memories_in_memory/partials/tracks.html %}
+
+  {% include special/memories_in_memory/partials/credits.html %}
+</main>
