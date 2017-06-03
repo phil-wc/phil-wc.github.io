@@ -90,25 +90,25 @@ credit:
   link_to:
     buy:
       - digital_store_name: iTunes
-        digital_store_url:
+        digital_store_url: https://itunes.apple.com/th/album/memories-in-memory/id1241779594
 
       - digital_store_name: Google Play
-        digital_store_url:
+        digital_store_url: https://play.google.com/store/music/album/phil_wc_Memories_in_Memory?id=Bl76lagosh3mafgv2u72b7fynla&hl=en
 
       - digital_store_name: Amazon MP3
-        digital_store_url:
+        digital_store_url: https://www.amazon.com/Memories-Memory-phil-wc/dp/B072JMNVWT/ref=sr_1_1?s=dmusic&ie=UTF8&qid=1496486260&sr=1-1-mp3-albums-bar-strip-0&keywords=phil_wc
 
       - digital_store_name: Bandcamp
         digital_store_url: https://phil-wc.bandcamp.com/album/memories-in-memory
 
     listen:
       - streaming_name: Spotify
-        streaming_url:
+        streaming_url: https://open.spotify.com/album/7Bf9K2vnY7WURgGPc3slTp
 
       - streaming_name: Deezer
-        streaming_url:
+        streaming_url: http://www.deezer.com/album/42312711?utm_source=deezer&utm_content=album-42312711&utm_term=102461282_1496486223&utm_medium=web
 
       - streaming_name: Fungjai
-        streaming_url:
+        streaming_url: https://www.fungjai.com/artists/phil-wc
 
   support: "Support me:"
