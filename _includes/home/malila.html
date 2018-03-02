@@ -1,15 +1,15 @@
 <div class="container-fluid">
   {% comment %}
-    start "memories in memory promote" container
+    start "malila" container
   {% endcomment %}
-  {% assign memories-in-memory = site.data.memories-in-memory %}
+  {% assign malila = site.data.malila %}
   <div class="row hidden-sm hidden-xs">
     <div class="col-lg-6 col-md-6">
       <div class="description text-center">
         <div class="content center-block">
           <img class="center-block img-responsive"
-            src="/assets/img/mim/{{ memories-in-memory.title.image }}"
-            alt="{{ memories-in-memory.title.album_name }}" />
+            src="/assets/img/home/{{ malila.title.image }}"
+            alt="{{ malila.title.album_name }}" />
         </div>
       </div>
     </div>
@@ -17,10 +17,10 @@
     <div class="col-lg-6 col-md-6">
       <div class="description">
         <div class="content">
-          <h1 class="normal-font-weight">Memories in Memory</h1>
-          <h2 class="light-font-weight no-padding">Music by phil_wc</h2>
-          <p class="light-font-weight text-white">Available now</p>
-          <a class="btn btn-default" href="{{ site.baseurl }}/memories-in-memory">Enter Exclusive Site</a>
+          <h1 class="normal-font-weight">{{ malila.promo-text.title }}</h1>
+          <h2 class="light-font-weight no-padding">{{ malila.promo-text.artist }}</h2>
+          <p class="light-font-weight text-white">&nbsp;</p>
+          <a class="btn btn-default" href="{{ site.baseurl }}/2018/03/02/Malila/">{{ malila.promo-text.button }}</a>
         </div>
       </div>
     </div>
@@ -32,18 +32,18 @@
       <div class="description text-center">
         <div class="heading-color">
           <img class="center-block img-responsive"
-            src="/assets/img/mim/{{ memories-in-memory.title.image }}"
-            alt="{{ memories-in-memory.title.album_name }}" />
-          <h1 class="normal-font-weight">Memories in Memory</h1>
-          <h2 class="light-font-weight">Music by phil_wc</h2>
-          <p class="text-white light-font-weight">Available now</p>
-          <a class="btn btn-default" href="{{ site.baseurl }}/memories-in-memory">Enter Exclusive Site</a>
+            src="/assets/img/home/{{ malila.title.image }}"
+            alt="{{ malila.title.album_name }}" />
+          <h1 class="normal-font-weight">{{ malila.promo-text.title }}</h1>
+          <h2 class="light-font-weight">{{ malila.promo-text.artist }}</h2>
+          <p class="text-white light-font-weight">&nbsp;</p>
+          <a class="btn btn-default" href="{{ site.baseurl }}/malila">{{ malila.promo-text.button }}</a>
         </div>
       </div>
     </div>
   </div>
   {% comment %}
-    end "memories in memory promote" container
+    end "malila" container
   {% endcomment %}
 </div>
 
