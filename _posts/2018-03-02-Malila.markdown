@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Malila The Farewell Flower soundtrack is now released"
+title:      "Malila The Farewell Flower soundtrack, and the interview"
 subtitle:   "ดนตรีประกอบภาพยนตร์เรื่องมะลิลา"
 date:       2018-03-02 12:00:00
 author:     "Phil Chapavich T."
@@ -39,3 +39,9 @@ Composer page [https://www.facebook.com/philwcfans/](https://www.youtube.com/red
 with English subtitles
 
 <iframe lass="center-block" width="560" height="315" src="https://www.youtube.com/embed/hdffI0OvVBc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+---
+
+# Interviewed by A Day Magazine Online (Thai)
+
+[https://www.adaymagazine.com/articles/draft-ost-malila](https://www.adaymagazine.com/articles/draft-ost-malila)
